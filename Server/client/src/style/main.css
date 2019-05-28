@@ -1,0 +1,622 @@
+
+
+
+#ScrollTop {
+    width: 58%;
+    margin: auto;
+}
+nav {
+    background-color:white;
+    height:60px;
+  
+}
+
+nav ul li a {
+    color:black;
+    font-family: Arial;
+    padding:0;
+    height:61px !important;
+}
+
+
+.tinyone img {
+    width:53px;
+}
+
+.tinytwo img {
+    width:113px;
+    
+}
+.tinythree img {
+    width:130px;
+}
+.tinyfour img {
+    width:77px;
+}
+.tinyfive img {
+    width:107px;
+}
+.tinysix img {
+    width:93px;
+}
+.tinyseven img {
+    width:130px;
+}
+
+.Languages {
+    margin-left:52px;
+    width:82px
+}
+
+.tinyeight img {
+    width:95px;
+}
+
+.FlowRight{
+    margin-left:25px;
+    width:102px;
+   
+}
+
+
+/* HEADER--------------------------- ENDS */
+
+/* pictures CONTENT-------SHIT NAME BUT OK */
+#MEGA {
+    padding:0;
+    margin:0;
+    width:100%;
+    height:878px !important;
+}
+img.wide {
+    
+    width:100% !important;
+    height:880px;
+    
+   
+    
+}
+
+
+
+
+.flow {
+    position: absolute !important;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:white;
+    padding:0;
+    margin:0;
+}
+
+p.megatext {
+    font-size:150px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-weight:normal;
+    font-style:normal;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    height:180px;
+    
+}
+
+p.minitext {
+    margin-top:0;
+    font-size:40.59px;
+    text-align: center;
+}
+
+.one {
+    margin-left:100px;
+    
+    
+}
+
+
+
+img.buttonImg {
+    height:90px;
+    width:401px;
+    position: absolute;
+    top:450px;
+    left:570px;
+}
+
+img.buttonMoreImg {
+    position: absolute;
+    top:450px;
+    left:1020px;
+}
+
+/*-----PICTURE CONTENT ENDS----- */
+
+/*---- WELCOME BEINGS -----*/
+.center {
+    text-align: center;
+    background-color:#F7F5F3;
+    padding: 0;
+    margin:0;
+    
+}
+
+
+p {
+    font-family: Arial,  sans-serif;
+    margin:0;
+}
+.FirstPara {
+    margin:0;
+    padding-top: 100px;
+    font-size:24px;
+    font-family: Arial, sans-serif;
+}
+
+.FontB {
+    font-size: 48px;
+    margin:0;
+    padding:0;
+    letter-spacing: 20px;
+}
+.NoM {
+    margin-top:0;
+    margin-bottom:15px;
+    color:#00BFBF;
+}
+.Number {
+    font-size:40px;
+    margin:0;
+    color:#00BFBF;
+}
+
+.FontMB{
+    font-size:20px;
+    color:#6C6C6C;
+    margin-bottom: 5px;
+    
+}
+
+.SpaceOne{
+    margin-left:105px;
+}
+.SpaceTwo{
+    margin-left:135px;
+    
+}
+
+.Pbottom {
+    font-size:20px;
+    color:#6C6C6C;
+    margin-bottom:25px;
+    padding-bottom:50px;
+}
+/* WELCOME ENDS---------<- */
+
+
+/* STAFF BEINGS------<-----*/
+
+.centerStaff {
+    text-align: center;
+    margin-top:100px;
+    font-size:24px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+  
+}
+
+
+.StaffPic {
+    margin-top:75px;
+}
+
+/* Pic margin ----*/
+.HM {
+    margin-left:180px;
+}
+ /* Pic margin ----*/
+ 
+ /* First para/span move ----*/
+.Amove {
+    float:left;
+}
+.Hmove {
+    
+   float:right;
+}
+
+.Pmove {
+    font-size:24px;
+    font-family: Arial,  sans-serif;
+    width: 28.7%;
+    margin-left:690px; 
+}
+
+/* First para/span move  ENDs----*/
+/* Second/blue para/span move  ----*/
+.PmoveSecond {
+    font-size:14px;
+    font-family: Arial,  sans-serif;
+    width: 34%;
+    margin-left:580px;
+    color:#00BFBF;
+      
+}
+
+.Bluemove {
+    float:left;
+}
+.BluemoveSecond {
+    float:right;
+}
+/* Second/Blue para/span move  ENDs----*/
+
+/* CANT WAIT TO REWRITE THIS SHIT */
+.StaffPicturesOne {
+    margin-top:100px;
+}
+
+/*Second row of para on second div*/
+.PmoveSecondDiv {
+    font-size:24px;
+    font-family: Arial,  sans-serif;
+    width: 29%;
+    margin-left:663px; 
+}
+
+.AmoveSecondDiv {
+    float:left;
+}
+.HmoveSecondDiv {
+    
+   float:right;
+}
+
+/*Second row of para on second div ENDs*/
+
+/*Second row of para on second div SECOND PARA/BLUE*/
+.PmoveSecondDivP {
+    font-size:14px;
+    font-family: Arial,  sans-serif;
+    width: 27.5%;
+    margin-left:687px; 
+    color:#00BFBF;
+}
+
+.BluemoveDiv {
+    float:right;
+}
+
+.BluemoveSecondDiv {
+    float:left;
+}
+/*Second row of para on second div SECOND PARA/BLUE Ends*/
+/* CANT WAIT TO REWRITE THIS SHIT Ends*/
+
+.StaffPicturesTwo {
+    margin-top:100px;
+    margin-left:-480px;
+}
+
+.PmoveThirdDiv {
+    font-size:24px;
+    font-family: Arial,  sans-serif;
+    width: 27.5%;
+    margin-left:455px; 
+    
+}
+
+.PmoveThirdDivP {
+    font-size:14px;
+    font-family: Arial,  sans-serif;
+    width: 27.5%;
+    margin-left:455px;
+    color:#00BFBF;   
+}
+
+
+.SocialMediaSmallButtons {
+    Margin-top:100px;
+}
+
+
+.IconLeft {
+    margin-left:100px;
+}
+
+
+
+/* STAFF ENDS ---------------------------------- */
+
+/* WITHFLOW BEGINS--------------------------< */
+
+
+
+.WithFlow {
+    text-align: center;
+    Background-color:#1F1F1F;
+    color:white;
+    height:353px;
+    font-family: Arial, sans-serif;
+    
+  
+}
+
+.GoFlow {
+    font-size:24px;
+    padding-top:40px;
+}
+
+.GoFlowBlue {
+    font-size: 14px;
+    color:#00BFBF;
+}
+
+.GoFlowGoda {
+    padding-top:20px;
+}
+
+
+/* WITHFLOW Ends--------------------------< */
+
+/* ProductPRICE BEGINS ---------------------< */
+
+.ProductsPrice {
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.ProductHeader {
+    font-size: 24px;
+    margin-top:100px;
+}
+
+.ProductImgDown {
+    margin-top:50px;
+}
+.ProductImgDownTwo {
+    margin-top:100px;
+}
+
+.ProductImgLeft {
+    margin-left:125px;
+}
+
+.ImgGigaLeft {
+    margin-left:600px;
+}
+
+.ProductPriceSecondHeader {
+    font-size: 24px;
+    margin-top:100px;
+}
+
+.ProductFontSize {
+    font-size: 16px;
+    font-weight: bold;
+}
+.Klippning {
+    margin-left:350px;
+}
+.KlippningOne {
+    margin-left:390px;
+}
+.ProductFontSizeSpan {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.KlippningTwo {
+    margin-left:20px;
+}
+
+.PaketDown {
+    Margin-top:50px;
+}
+.ProductFontSizePaket {
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left:-475px;
+   
+}
+.SpanPaket {
+    margin-left:267px;
+}
+.SpanPaketOne {
+    margin-left:227px;
+}
+
+
+.UpWash {
+    margin-top: 50px;
+}
+
+.ProductFontSizeUpWash {
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left:-430px;
+}
+
+.SpanUpWash {
+    margin-left:256px;
+}
+
+.SpanUpWashOne {
+    margin-left:325px;
+}
+.SpanUpWashTwo {
+    margin-left:200px;
+}
+.Makeup {
+    margin-top:50px;
+}
+.ProductFontSizeMakeUp {
+    text-decoration: underline;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left:-470px;
+}
+
+.SpanMakeup {
+    margin-left:145px;
+}
+
+.SpanMakeUpTwo {
+    margin-left:-35px;
+}
+/* ProductPRICE ENDS ---------------------< */
+
+/* Contact Us Begins ---------------------< */
+.ContactUs {
+text-align: center;
+margin-bottom:150px;
+height:350px;
+position: relative;
+font-family: Arial,  sans-serif;
+font-weight: normal;
+}
+
+.ContactUs img {
+    height:350px;
+    width:100%;
+}
+.ContactUsHeader {
+    font-size: 48px;
+    color:#00FFFF; 
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.ContactUsPara {
+    font-size: 36px;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+.ContactUsSpan {
+    color:#00FFFF;   
+}
+
+.ContactUsSpanBig {
+    color:#00FFFF;
+    font-size:48px;   
+}
+
+/* Contact Us ENDs ---------------------< */
+
+
+/* MAPS US BEGIN ----------------- */
+
+
+
+.Maps {
+    text-align: center;
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.MapsMoveLeft {
+    position: absolute;
+    left:550px;
+    margin-top:-50px;
+
+}
+
+.GoogleMaps {
+    position: absolute;
+    margin-top:-50px;
+    left:900px;
+    height:500px;
+    width:600px;
+}
+
+.mapouter {
+    width:500px;
+    height:600px;
+}
+.gmap_canvas {
+    width:500px;
+    height:600px;
+}
+
+
+.MapsSocialSpread {
+    margin-left:50px;
+}
+
+.MapNumber {
+    font-size: 40px;
+    font-weight: bold;
+}
+.MapInfo {
+    font-size: 20px;
+    font-weight: bold;
+}
+.MapsDown {
+    margin-top:25px;
+}
+
+/* MAPS US ENDS ----------------- */
+
+
+/* Foooter BEGIN------------ */
+
+
+.Footer {
+    background-color:#2D2D2D;
+    margin-top:750px;
+    height:300px;
+    color:white;
+    text-align: center;
+    
+}
+a {
+    color:white;
+}
+
+.FooterNavi {
+    float:left;
+    margin-left:490px;
+    margin-top:25px;
+    text-align: left;
+}
+
+.FooterMedia {
+    Float:left;
+    margin-left:125px;
+    margin-top:25px;
+}
+
+.Adress {
+    Float:left;
+    margin-left:125px;
+    margin-top:25px;
+}
+
+.TaKontakt {
+    Float:left;
+    margin-left:125px;
+    margin-top:25px;
+}
+
+.FaceFooter {
+    height: 48px;
+    width: 48px;
+}
+.AdressBig {
+    font-size:16px;
+}
+
+.FooterUl {
+text-align: left;
+margin-top:25px;
+}
+.FooterImageDown {
+    margin-top:25px;
+}
+/* Foooter ENDS------------ */
