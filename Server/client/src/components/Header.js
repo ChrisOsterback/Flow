@@ -32,16 +32,16 @@ class Header extends Component {
             
     
             <ul className="center hide-on-med-and-down">
-            <li className="tinyone"><a href="/" ><img src={Home} alt="Hem"/>   </a></li>
-            <li className="tinytwo"><a href="#Esport" ><img src={Welcome} alt="Välkommen"/>    </a></li>
-            <li className="tinythree"><a href="/Login" ><img src={Staff} alt="Personal"/>  </a></li>
-            <li className="tinyfour"><a href="/Login" ><img src={About} alt="Om Oss"/>   </a></li>
-            <li className="tinyfive"><a href="/Login" ><img src={Products} alt="Produkter"/>  </a></li>           
-            <li className="tinysix"><a href="/Login" ><img src={PriceList} alt="PrisLista"/>   </a></li>
-            <li className="tinyseven"><a href="/Login" ><img src={Contact} alt="Kontaka Oss"/>   </a></li>
-            <li className="Languages"><a href="/Login" ><img src={English} alt="English"/> </a></li>
-            <li className="tinyeight"><a href="/Login" ><img src={Finnish} alt="Finnish"/>  </a></li>
-            <li className="FlowRight"><a href="/Login" ><img src={Flow} alt="Flow"/> </a></li>
+            <li className="tinyone"><a href="#MEGA" ><img src={Home} alt="Hem"/>   </a></li>
+            <li className="tinytwo"><a href="#center" ><img src={Welcome} alt="Välkommen"/>    </a></li>
+            <li className="tinythree"><a href="#Staff" ><img src={Staff} alt="Personal"/>  </a></li>
+            <li className="tinyfour"><a href="#GoFlow" ><img src={About} alt="Om Oss"/>   </a></li>
+            <li className="tinyfive"><a href="#Products" ><img src={Products} alt="Produkter"/>  </a></li>           
+            <li className="tinysix"><a href="#Prices" ><img src={PriceList} alt="PrisLista"/>   </a></li>
+            <li className="tinyseven"><a href="#Contact" ><img src={Contact} alt="Kontaka Oss"/>   </a></li>
+            <li className="Languages"><a href="/" ><img src={English} alt="English"/> </a></li>
+            <li className="tinyeight"><a href="/" ><img src={Finnish} alt="Finnish"/>  </a></li>
+            <li className="FlowRight"><a href="/" ><img src={Flow} alt="Flow"/> </a></li>
             </ul>
           
             

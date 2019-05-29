@@ -9,7 +9,7 @@ class Withflow extends Component {
     render() {
         return (
             
-         <div className="WithFlow">
+         <div className="WithFlow" >
           <p className="GoFlow">GO WITH THE FLOW</p>
           <p className="GoFlowBlue">om flow</p>
             <p className="GoFlowGoda">Vi är en  trendig frisörsalong i hjärtat av Vasa. Förutom klippningar, färgningar och stylningar erbjuder vi också make up tjänster för alla tillfällen, såsom fester <br></br>
@@ -17,6 +17,7 @@ class Withflow extends Component {
                 Om du vill, och är sugen på något nytt, planerar vi gärna en ny look åt dig.</p>
                 <br></br>   
                 <p>Välkommen in, du är i goda händer</p>
+                <div id="Products"></div>
          </div>
         );
       }

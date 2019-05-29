@@ -11,7 +11,7 @@ class Maps extends Component {
     render() {
         return (
             
-         <div className="Maps">
+         <div className="Maps" >
            <div className="MapsMoveLeft">
            <div >
             <a href="https://www.facebook.com/FLOWVAASA/"><img src={Facebook} alt="Facebook" /></a>

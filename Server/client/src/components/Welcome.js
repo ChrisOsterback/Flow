@@ -9,7 +9,7 @@ class Welcome extends Component {
     render() {
         return (
             
-         <div className="center">
+         <div className="center" id="center">
            <p className="FirstPara">VÄLKOMMEN TILL</p>
            <p className="FontB">FLOW</p>
            <p className="NoM">REWELL CENTER 139</p>
@@ -21,7 +21,7 @@ class Welcome extends Component {
              Lö <span className="SpaceTwo">  10-15 </span></p>
              
              <p className="Pbottom">(eller enligt överrenskommelse)</p>
-             
+             <div id="Staff"></div>
          </div>
         );
       }

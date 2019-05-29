@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Spring } from 'react-spring/renderprops';
 
 import ProductLine from './ProductPictures/ProductLine.png'
 import Wella from './ProductPictures/Wella.jpg'
@@ -7,15 +8,25 @@ import Fudge from './ProductPictures/Fudge.jpg'
 import GHD from './ProductPictures/GHD.jpg'
 import Evo from './ProductPictures/Evo.jpg'
 import PriceLine from './ProductPictures/ProductLine.png'
+
+
 class ProductsPriceList extends Component {
 
 
     render() {
         return (
             
-          <div className="ProductsPrice">
+          
+          <div className="ProductsPrice" >
           <p className="ProductHeader">PRODUKTER</p>
           <img src={ProductLine} alt="Product" />
+
+          <Spring
+                from={{ opacity: 0, }}
+                to={{ opacity: 1,   }}
+                config={{ delay:1000, duration: 1000}}
+                >
+                { props => ( <div style={props}>
 
           <div className="ProductImgDown">
           <img src={Wella} alt="Wella" />
@@ -28,12 +39,17 @@ class ProductsPriceList extends Component {
           <div className="ProductImgDownTwo">
           <img  src={GHD} alt="GHD" />
           <img className="ImgGigaLeft" src={Evo} alt="Evo" />
+          <div id="Prices"></div>
+         
   
           </div>
+          </div>
+                )}
+                </Spring>
              
-             <p className="ProductPriceSecondHeader">PRISLISTA</p>
+             <p className="ProductPriceSecondHeader" >PRISLISTA</p>
              <img src={PriceLine} alt="PriceLine" />
-             <p ><span className="ProductFontSize">Klippning:</span> <span className="Klippning">32,50 - 65,50€</span> 
+             <p className="ProductMarginTop" ><span className="ProductFontSize">Klippning:</span> <span className="Klippning">32,50 - 65,50€</span> 
              <br></br> 
              <span className="ProductFontSize">Färg:</span>  <span className="KlippningOne">92,50 - 138 €</span> 
              <br></br>
@@ -74,7 +90,7 @@ class ProductsPriceList extends Component {
               Vi förbehåller oss rätten att fakturera 50% för de tjänster som avbokats på <br>
               </br>samma dag eller om de inte alls avbokats.</span>
               </p>
-    
+    <div  id="Contact"></div>
          </div>
         );
       }

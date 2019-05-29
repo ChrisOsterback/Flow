@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Spring } from 'react-spring/renderprops';
 
 import Line from './StaffPictures/Line.png'
 import Ani from './StaffPictures/Ani.jpg'
@@ -16,9 +17,18 @@ class Staff extends Component {
     render() {
         return (
             
-         <div className="centerStaff">
+         <div className="centerStaff" >
           <p>VÅR PERSONAL</p>
           <img src={Line} alt="Line" />
+
+          <Spring
+                from={{ opacity: 0, }}
+                to={{ opacity: 1,   }}
+                config={{ delay:1000, duration: 1000}}
+                >
+                { props => ( <div style={props}>
+
+
           <div className="StaffPic">
     <div className="StaffPictures"> <img src={Ani} alt="Ani" />  <img className="HM" src={Hilda} alt="Hilda" />
             <p className="Pmove"><span className="Amove">ANI</span>  
@@ -40,9 +50,14 @@ class Staff extends Component {
               <p className="PmoveThirdDiv"><span className="AmoveThirdDiv">OTT V</span></p>
               <p className="PmoveThirdDivP"><span className="BluemoveThirdDiv">FRISÖR </span></p>
             </div>
+            <div id="GoFlow"></div>
             <div className="SocialMediaSmallButtons"><a href="https://www.instagram.com/salonflowvaasa/"><img src={Insta} alt="Instagram"></img></a>
             <a href="https://www.facebook.com/FLOWVAASA/"> <img className="IconLeft" src={Facebook} alt="Facebook"></img></a>
             <a href="http://flowvaasa.blogspot.com/"><img className="IconLeft" src={Blog} alt="Blog"></img></a></div>
+            </div>
+                )}
+                </Spring>
+                
          </div>
         );
       }

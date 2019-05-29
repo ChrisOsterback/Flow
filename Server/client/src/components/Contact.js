@@ -10,7 +10,7 @@ class Contact extends Component {
 
     render() {
         return (
-            <div className="ContactUs">
+            <div className="ContactUs" id="Contact">
            <img src={ContactUs} alt="contactus"/>
            <p className="ContactUsHeader">KONTAKTA OSS</p>
            <br></br>
@@ -23,8 +23,8 @@ class Contact extends Component {
            </p>
 
            
-        
-            </div>
+        <div id="Social"></div>
+            </div >
             ); 
     }
     
