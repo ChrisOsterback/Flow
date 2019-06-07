@@ -1,0 +1,43 @@
+<%- include('../_layouts/adminheader/adminheader') %>
+
+<h2 class="page-title">Content</h2>
+<a href="/admin/content/add-staff" class="btn btn-primary">Add new content</a>
+<br><br>
+
+<% if (esimatedDocumentCount > 0) { %>
+
+<table class="table table-striped alignmiddle">
+
+    <thead>
+        <tr class="home">
+            <th>Name</th>
+            <th>work title</th>
+            <th>Image</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% staffs.forEach(function(staff){ %>
+        <tr>
+            <td><%= staff.title %></td>
+            <td><%= staff.worktitle %></td>
+            <td>
+                <% if (staff.image == "") { %>
+                <img id="noimage" src="/images/noimage.png">
+                <% } else {%>
+                <img id="noimage" src="/staff_images/<%= staff._id %>/<%= staff.image %>">
+                <% }%>
+            </td>
+            <td><a href="/admin/content/edit-staff/<%= staff._id %>">Edit</a></td>
+            <td><a class="confirmDeletion" href="/admin/content/delete-staff/<%= staff._id %>">Delete</a></td>
+        </tr>
+        <% }); %>
+    </tbody>
+</table>
+
+<% } else {%>
+<h3 class="text-center">Wait for database "F5 page" or you have not added any content yet</h3>
+<% }%>
+
+<%- include('../_layouts/adminheader/adminfooter') %>

@@ -1,0 +1,243 @@
+<% include _layouts/sweheader %>
+
+
+
+<div id="Home" >
+<img class="wide" src='/sweimg/background.jpg' alt="background"/>
+<div class="flow">
+ <p class="megatext">F &nbsp; L  &nbsp; O  &nbsp; W</p>
+
+ <p class="minitext"><span class="Quote">
+     </span>
+     <i class="fas fa-circle"></i>Hair <span class="one">
+         <i class="fas fa-circle"></i>Make up</span>
+         <span class="one"><i class="fas fa-circle"></i>Shop</span></p>
+
+         </div>
+ 
+
+
+ </div>
+ 
+ <div>
+
+    
+
+     <a href="https://slotti.fi/booking/Flow/"><img class="buttonImg" src='/finimg/Fonline.png' alt="online"/></a>
+
+     </div>
+     <a href="#Social"><img class="buttonMoreImg" src='/finimg/sociala.png' alt="online"/></a>
+
+     </div>
+ 
+
+     
+
+     
+ </div>     
+ 
+<!--PICTURE ENDS -->
+
+ </div>
+ <div class="center" id="Welcome">
+           <p class="FirstPara">TERVETULOA</p>
+           <p class="FontB">FLOW</p>
+           <p class="NoM">REWELL CENTER 139</p>
+           <p>Liike sijaitsee Rewell Centerissä, ensimmäisessä kerroksessa. Ikkunat ovat raastuvankatuun ja kaupungintaloon päin. 
+             <br>Aikoja voi varata puhelimitse:  </p>
+             <p class="Number">06 312 0750</p>
+             <p class="FontMB">Aukioloajat</p>
+             <p class="FontMB" >Ma-Pe <span class="SpaceOne"> 10-18 </span> <br>
+             La <span class="SpaceTwo">  10-15 </span></p>
+             
+             <p class="Pbottom">(tai sopimuksen mukaan)</p>
+             <div id="Staff"></div>
+         </div>
+<!----WELCOME ENDS-->
+
+         <div class="centerStaff" >
+          <p>HENKILÖKUNTA</p>
+          <img src=/globalimg/Line.png alt="Line" />
+
+          <div class="staffnew">
+          
+           <% staffs.forEach(function(p){ %>
+          <div class="staffrow">
+         <img src="/staff_images/<%= p.id %>/<%= p.image %>" id="<%= p.slug %>" alt="staff" >
+         <p class="staffname"><%= p.title %></p>  <p class="staffworktitle"><%= p.worktitle %></p>
+    </div>
+    <% }); %>  
+    
+     </div>
+     
+
+          <div class="StaffPic">
+    
+            <div id="GoFlow"></div>
+            <div class="SocialMediaSmallButtons"><a href="https://www.instagram.com/salonflowvaasa/"><img src='globalimg/insta.jpg' alt="Instagram"></a>
+            <a href="https://www.facebook.com/FLOWVAASA/"> <img class="IconLeft" src='globalimg/Facebook.jpg' alt="Facebook"></a>
+            <a href="http://flowvaasa.blogspot.com/"><img class="IconLeft" src='globalimg/Blog.jpg' alt="Blog"></a></div>
+            </div>
+               
+               
+                </div>
+                <!--staff ends-->
+
+                <div class="WithFlow" >
+          <p class="GoFlow">GO WITH THE FLOW</p>
+          <p class="GoFlowBlue">MEISTÄ</p>
+            <p class="GoFlowGoda">Olemme trendikäs parturi-kampaamo Vaasan ydinkeskustassa. 
+            Hiuspalveluiden lisäksi tarjoamme myös meikkauspalvelut sekä meillä on tuotemyynti. 
+            Flow:n <br>ihana tiimi on ammattitaitoinen, innokas ja valmis täyttämään asiakkaiden toiveita!  
+            Sunnittelemme myös mielellään aisakkaille uuden lookin, jos he sitä <br>toivovat. 
+                </p>
+                <br>  
+                <p>Tervetuloa meille asiakkaaksi!</p>
+                <div id="Products"></div>
+         </div>
+  
+  <!-- flow ends-->>
+
+         <div class="ProductsPrice" >
+          <p class="ProductHeader">TUOTTEET</p>
+           <img src='/globalimg/Line.png' alt="Product" />
+
+
+          <div class="ProductImgDown">
+          <img src='/globalimg/Wella.jpg'  alt="Wella" />
+          <img class="ProductImgLeft" src='/globalimg/Fudge.jpg'  alt="Fudge" />
+          <img class="ProductImgLeft" src='/globalimg/ProSeb.jpg'  alt="Proseb" />
+          
+
+
+          </div>
+          <div class="ProductImgDownTwo">
+          <img  src='/globalimg/GHD.jpg'  alt="GHD" />
+          <img class="ImgGigaLeft" src='/globalimg/Evo.jpg'  alt="Evo" />
+          <div id="Prices"></div>
+         
+  
+          </div>
+          </div>
+
+          
+             <!--PRODUCT ENDS-->
+
+  
+     
+  
+
+
+  <div class="ProductsPrice" >
+             <p class="ProductPriceSecondHeader" >HINNASTO</p>
+             <img src='/globalimg/Line.png'  alt="PriceLine" />
+        
+   
+  
+   
+     
+   
+             <p class="ProductMarginTop" ><span class="ProductFontSize">Klippning:</span> <span class="Klippning"></span> 
+             <br></br> 
+             <span class="ProductFontSize">Färg:</span>  <span class="KlippningOne"></span> 
+             <br></br>
+             <span class="ProductFontSizeSpan">Ögonbrynsplockningar och färgning, ögonfransfärg</span>
+             <span class="KlippningTwo">  13,50 - 27,00 € </span>
+             <br></br>
+             </p>
+             <p class="PaketDown">
+             <span class="ProductFontSizePaket">Paket</span>
+             <br></br>
+             <br></br>
+            
+            
+            <% prices.forEach(function(p){ %>
+<div class="centerprice">
+            <div class="fixleft">
+            <div class="priceleft">
+            <span><%= p.first %></span>  <span class="priceright"><%= p.second %></span> 
+            </div>
+            </div>
+             </div>
+             <% }); %>  
+            
+
+
+
+             </p>
+             <p class="UpWash">
+              <span class="ProductFontSizeUpWash">Uppsättning</span>
+              <br></br>
+              <br></br>
+            UppsättningTvätt + föning (45 min)   <span class="SpanUpWash">45,50€</span>
+             <br></br>
+             Festuppsättning      <span class="SpanUpWashOne">32,00 - 60,00 €</span>
+             <br></br>
+             Bruduppsättning (inkl. 15 min planering) <span class="SpanUpWashTwo">67,50 €/h </span> 
+             </p>
+             <p class="Makeup">
+            <span class="ProductFontSizeMakeUp">Makeup</span>
+             <br></br>  <br></br>
+            Fest-, bröllops- och fotograferingsmakeup <span class="SpanMakeup">58,00 - 120,00 €</span>
+            <br></br><br></br> <br></br>
+            <span class="SpanMakeUpTwo">*Vid förhinder bör du avboka din tid senast 24h före den avtalade tidpunkten.
+              <br></br> 
+              Vi förbehåller oss rätten att fakturera 50% för de tjänster som avbokats på <br>
+              </br>samma dag eller om de inte alls avbokats.</span>
+              </p>
+
+
+
+    <div  id="Contact"></div>
+         </div>
+
+   <!--- price list ends-->
+
+         <div class="ContactUs" id="Contact">
+           <img src='/globalimg/ContactUs.jpg' alt="contactus"/>
+           <p class="ContactUsHeader">YHTEISTIEDOT</p>
+           <br>
+           <p class="ContactUsPara">Löydät meidät
+           <span class="ContactUsSpan"> REWELL CENTERSISTÄ, </span> VAASAN 
+           
+           <br>
+           <span  class="ContactUsSpan">keskustasta! </span>
+           <br><span class="ContactUsSpanBig">06 312 0750</span>
+           </p>
+
+           
+        <div id="Social"></div>
+            </div >
+      <!--- contact ends-->>
+
+            <div class="Maps" >
+           <div class="MapsMoveLeft">
+           <div >
+            <a href="https://www.facebook.com/FLOWVAASA/"><img src='/globalimg/Facebook.jpg' alt="Facebook" /></a>
+            <a href="https://www.instagram.com/salonflowvaasa/">  <img class="MapsSocialSpread" src='/globalimg/insta.jpg' alt="Insta" /></a> 
+            <a href="http://flowvaasa.blogspot.com/"><img class="MapsSocialSpread" src='/globalimg/Blog.jpg' alt="Blog" /></a> 
+            </div>
+
+            <p class="MapsDown">
+            <span class="MapNumber">06 312 0750</span> 
+            <br>
+            <span class="MapInfo">info@flowvasa.fi</span>
+            </p>
+            </div>
+
+
+            <div class="GoogleMaps">
+            <div class="mapouter"><div class="gmap_canvas">
+              <iframe title="Map" width="600" height="500" id="gmap_canvas" 
+            src="https://maps.google.com/maps?q=Flow%2C%20Raastuvankatu%2019%2C%2065100%20Vaasa&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+              frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe> 
+              </div> </div>
+              
+
+            </div>
+
+</div>
+
+
+        
+  <% include _layouts/swefooter %>

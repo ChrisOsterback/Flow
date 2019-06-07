@@ -1,0 +1,39 @@
+<%- include('../_layouts/adminheader/adminheader') %>
+
+<h2 class="page-title">PriceList</h2>
+<a href="/admin/price/add-price" class="btn btn-primary">Add new content</a>
+<br><br>
+
+<% if (esimatedDocumentCount > 0) { %>
+
+<table class="table table-striped alignmiddle">
+
+    <thead>
+        <tr class="home">
+            <th>Content</th>
+            <th>Second</th>
+           
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% prices.forEach(function(price){ %>
+        <tr>
+            <td><%= price.first %></td>
+            <td><%= price.second %></td>
+
+               
+            </td>
+            <td><a href="/admin/price/edit-price/<%= price._id %>">Edit</a></td>
+            <td><a class="confirmDeletion" href="/admin/price/delete-price/<%= price._id %>">Delete</a></td>
+        </tr>
+        <% }); %>
+    </tbody>
+</table>
+
+<% } else {%>
+<h3 class="text-center">Wait for database "F5 page" or you have not added any content yet</h3>
+<% }%>
+
+<%- include('../_layouts/adminheader/adminfooter') %>

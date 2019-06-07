@@ -1,0 +1,29 @@
+<%- include('../_layouts/adminheader/adminheader') %>
+
+<h2 class="page-title">Edit Content</h2>
+<a href="/admin/price" class="btn btn-primary">Back to all Content page</a>
+<br><br>
+
+<form method="post" action="/admin/price/edit-price/<%= id %>" enctype="multipart/form-data">
+    
+<div class="form-group">
+<label for="">content</label>
+<input type="text" class="form-control"  id="first" name="first"  placeholder="Name"><%= first %>
+</div>
+
+<div class="form-group">
+<label for="">content</label>
+<input name="second" class="form-control"  id="second"  placeholder="content"><%= second %>
+</div>
+
+
+  <button class="btn btn-default">Submit</button>
+  </form>
+  
+
+
+
+
+
+
+<%- include('../_layouts/adminheader/adminfooter') %>

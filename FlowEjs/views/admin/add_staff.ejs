@@ -1,0 +1,54 @@
+<%- include('../_layouts/adminheader/adminheader') %>
+
+<h2 class="page-title">Add staff</h2>
+<a href="/admin/content" class="btn btn-primary">Back to all staff page</a>
+<br><br>
+
+<form method="post" action="/admin/content/add-staff" enctype="multipart/form-data">
+
+<div class="form-group">
+<label for="">name</label>
+<input type="text" class="form-control" id="addname"  name="title" value="<%= title %>" placeholder="Name">
+</div>
+
+<div class="form-group">
+<label for="">Work title</label>
+<input name="worktitle" class="form-control" id="worktitle"  placeholder="Work Title"><%= worktitle %>
+</div>
+
+
+
+<div class="form-group">
+<label for="">Image</label>
+<input type="file" class="form-control" name="image" id="img">
+<img src="#" id="imgPreview" alt="">
+</div>
+
+
+
+<button class="btn btn-default">Submit</button>
+</form>
+
+<script>
+    
+    function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+            
+            reader.onload = function(e) {
+                $("#imgPreview").attr('src', e.target.result).width(100).height(100);
+            }
+            
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+    
+    $("#img").change(function() {
+        readURL(this);
+    });
+    
+</script>
+
+
+
+<%- include('../_layouts/adminheader/adminfooter') %>
