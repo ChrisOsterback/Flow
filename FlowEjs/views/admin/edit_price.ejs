@@ -6,15 +6,19 @@
 
 <form method="post" action="/admin/price/edit-price/<%= id %>" enctype="multipart/form-data">
     
+
+<br>
 <div class="form-group">
-<label for="">content</label>
-<input type="text" class="form-control"  id="first" name="first"  placeholder="Name"><%= first %>
+<label for="">title</label>
+<input class="form-control" name="first" value="<%= first %>" placeholder="title">
 </div>
 
 <div class="form-group">
-<label for="">content</label>
-<input name="second" class="form-control"  id="second"  placeholder="content"><%= second %>
+<label for="">pris</label>
+<input name="second" class="form-control"  value="<%= second %>"  placeholder="pris"> 
 </div>
+
+
 
 
   <button class="btn btn-default">Submit</button>

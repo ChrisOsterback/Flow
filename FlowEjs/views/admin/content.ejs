@@ -4,7 +4,7 @@
 <a href="/admin/content/add-staff" class="btn btn-primary">Add new content</a>
 <br><br>
 
-<% if (esimatedDocumentCount > 0) { %>
+
 
 <table class="table table-striped alignmiddle">
 
@@ -12,6 +12,8 @@
         <tr class="home">
             <th>Name</th>
             <th>work title</th>
+            <th>Swedish page work title</th>
+            <th>English page work title</th>
             <th>Image</th>
             <th>Edit</th>
             <th>Delete</th>
@@ -22,6 +24,8 @@
         <tr>
             <td><%= staff.title %></td>
             <td><%= staff.worktitle %></td>
+            <td><%= staff.sweworktitle %></td>
+            <td><%= staff.engworktitle %></td>
             <td>
                 <% if (staff.image == "") { %>
                 <img id="noimage" src="/images/noimage.png">
@@ -36,8 +40,6 @@
     </tbody>
 </table>
 
-<% } else {%>
-<h3 class="text-center">Wait for database "F5 page" or you have not added any content yet</h3>
-<% }%>
+
 
 <%- include('../_layouts/adminheader/adminfooter') %>

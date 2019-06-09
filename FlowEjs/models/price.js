@@ -4,15 +4,15 @@ var mongoose = require('mongoose');
 var PriceSchema = mongoose.Schema({
    
     first: {
-        type: String,
-        required: true
+        type: String
+        
     },
     slug: {
         type: String
     },
     second: {
         type: String
-    }
+    },
     
     
 });

@@ -9,16 +9,12 @@ var Staff = require('../models/staff');
 
 
 router.get('/',  function (req, res) {
-    var esimatedDocumentCount
-
-    Staff.count(function (err, c) {
-        esimatedDocumentCount = c;
-    });
+   
 
     Staff.find(function (err, staffs) {
         res.render('admin/content', {
             staffs: staffs,
-            esimatedDocumentCount: esimatedDocumentCount
+            
         });
     });
 });
@@ -34,7 +30,8 @@ router.get('/add-staff',  function (req, res) {
     var title = "";
     var slug = "";
     var worktitle = "";
-   
+    var sweworktitle = "";
+    var engworktitle = "";
   
     
 
@@ -43,7 +40,8 @@ router.get('/add-staff',  function (req, res) {
             title: title,
             slug: slug,
             worktitle: worktitle,
-      
+            sweworktitle: sweworktitle,
+            engworktitle: engworktitle
            
             
         });
@@ -63,7 +61,8 @@ router.post('/add-staff', function (req, res) {
     var title = req.body.title;
     var slug = title.replace(/\s+/g, '-').toLowerCase();
     var worktitle = req.body.worktitle;
-
+    var sweworktitle = req.body.sweworktitle;
+    var engworktitle = req.body.engworktitle;
   
 
   
@@ -78,7 +77,8 @@ router.post('/add-staff', function (req, res) {
                 title: title,
                 slug: slug,
                 worktitle: worktitle,
-              
+                sweworktitle: sweworktitle,
+                engworktitle: engworktitle
                 
                 
             });
@@ -92,7 +92,8 @@ router.post('/add-staff', function (req, res) {
                         title: title,         
                         slug: slug,
                         worktitle: worktitle,
-                     
+                        sweworktitle: sweworktitle,
+                        engworktitle: engworktitle
 
                         
                         
@@ -105,6 +106,8 @@ router.post('/add-staff', function (req, res) {
                     title: title,
                     slug: slug,
                     worktitle: worktitle,
+                    sweworktitle: sweworktitle,
+                    engworktitle: engworktitle,
                     image: imageFile, 
                    
                 });
@@ -164,6 +167,8 @@ router.get('/edit-staff/:id',  function (req, res) {
                             title: p.title,
                             errors: errors,
                             worktitle: p.worktitle,
+                            sweworktitle: p.sweworktitle,
+                            engworktitle: p.engworktitle,
                             image: p.image,
                             id: p._id
                         });
@@ -189,6 +194,8 @@ router.post('/edit-staff/:id', function (req, res) {
     var title = req.body.title;
     var slug = title.replace(/\s+/g, '-').toLowerCase();
     var worktitle = req.body.worktitle;
+    var sweworktitle = req.body.sweworktitle;
+    var engworktitle = req.body.engworktitle;
     var pimage = req.body.pimage;
     var id = req.params.id;
 
@@ -213,6 +220,8 @@ router.post('/edit-staff/:id', function (req, res) {
                         p.title = title;
                         p.slug = slug;
                         p.worktitle = worktitle;
+                        p.sweworktitle = sweworktitle;
+                        p.engworktitle = engworktitle;
                       
                       
                    

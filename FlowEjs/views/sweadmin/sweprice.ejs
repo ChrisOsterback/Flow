@@ -1,0 +1,136 @@
+<%- include('../_layouts/adminheader/adminheader') %>
+
+<h2 class="page-title">PriceList</h2>
+
+
+
+
+
+
+<br><br>
+<h1>HAIR CUT PRICE</h1>
+<a href="/sweadmin/sweprice/add-sweklipp" class="btn btn-primary">Add hair cut content</a>
+<table class="table table-striped alignmiddle">
+    <thead>
+        <tr class="home">
+            <th>price</th>
+            <th>price</th>
+            <th>price</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% sweklipps.forEach(function(sweklipps){ %>
+        <tr>
+            <td><%= sweklipps.first %></td>
+            <td><%= sweklipps.second %></td>
+            <td><%= sweklipps.third %></td>  
+            </td>
+            <td><a href="/sweadmin/sweprice/edit-sweklipp/<%= sweklipps._id %>">Edit</a></td>
+            <td><a class="confirmDeletion" href="/sweadmin/sweprice/delete-sweklipp/<%= sweklipps._id %>">Delete</a></td>
+        </tr>
+        <% }); %>
+    </tbody>
+</table>
+
+<br><br><br><br>
+
+<h1>PACKAGE PRICE</h1>
+<a href="/sweadmin/sweprice/add-sweprice" class="btn btn-primary">Add new package content</a>
+
+<table class="table table-striped alignmiddle">
+    <thead>
+        <tr class="home">
+            <th>title</th>
+            <th>price</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% sweprices.forEach(function(sweprice){ %>
+        <tr>
+            <td><%= sweprice.first %></td>
+            <td><%= sweprice.second %></td>
+            
+
+               
+            </td>
+            <td><a href="/sweadmin/sweprice/edit-sweprice/<%= sweprice._id %>">Edit</a></td>
+            <td><a class="confirmDeletion" href="/sweadmin/sweprice/delete-sweprice/<%= sweprice._id %>">Delete</a></td>
+        </tr>
+        <% }); %>
+    </tbody>
+</table>
+
+<!-- FUCKING ADD HAIR LOL THIS IS MESSY-->
+<br><br><br><br>
+
+
+
+<h1>HAIR STYLE PRICE</h1>
+<a href="/sweadmin/sweprice/add-swehair" class="btn btn-primary">Add new hair style content</a>
+<table class="table table-striped alignmiddle">
+    <thead>
+        <tr class="home">
+            <th>name</th>
+            <th>price</th>
+            
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% swehairs.forEach(function(swehairs){ %>
+        <tr>
+            <td><%= swehairs.first %></td>
+            <td><%= swehairs.second %></td>
+            
+            </td>
+            <td><a href="/sweadmin/sweprice/edit-swehair/<%= swehairs._id %>">Edit</a></td>
+            <td><a class="confirmDeletion" href="/sweadmin/sweprice/delete-swehair/<%= swehairs._id %>">Delete</a></td>
+        </tr>
+        <% }); %>
+    </tbody>
+</table>
+
+<br><br><br><br>
+
+
+
+<br>
+
+
+<br><br>
+
+<h1>MAKEUP PRICE</h1>
+<a href="/sweadmin/sweprice/add-swemake" class="btn btn-primary">Add new make up content</a>
+<table class="table table-striped alignmiddle">
+    <thead>
+        <tr class="home">
+            <th>Makeup</th>
+            <th>price</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% swemakes.forEach(function(swemake){ %>
+        <tr>
+            <td><%= swemake.first %></td>
+            <td><%= swemake.second %></td> 
+            </td>
+            <td><a href="/sweadmin/sweprice/edit-swemake/<%= swemake._id %>">Edit</a></td>
+            <td><a class="confirmDeletion" href="/sweadmin/sweprice/delete-swemake/<%= swemake._id %>">Delete</a></td>
+        </tr>
+        <% }); %>
+    </tbody>
+</table>
+
+
+
+
+
+
+<%- include('../_layouts/adminheader/adminfooter') %>

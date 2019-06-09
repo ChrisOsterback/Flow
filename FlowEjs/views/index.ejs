@@ -1,4 +1,4 @@
-<% include _layouts/sweheader %>
+<% include _layouts/finheader %>
 
 
 
@@ -98,7 +98,7 @@
   
   <!-- flow ends-->>
 
-         <div class="ProductsPrice" >
+         <div class="Productsimgs" >
           <p class="ProductHeader">TUOTTEET</p>
            <img src='/globalimg/Line.png' alt="Product" />
 
@@ -127,70 +127,152 @@
      
   
 
-
+  <div class="PUSHDOWNPRICE">
   <div class="ProductsPrice" >
-             <p class="ProductPriceSecondHeader" >HINNASTO</p>
+             <p class="PriceHeader" >HINNASTO</p>
              <img src='/globalimg/Line.png'  alt="PriceLine" />
-        
+        </div>
    
-  
-   
-     
-   
-             <p class="ProductMarginTop" ><span class="ProductFontSize">Klippning:</span> <span class="Klippning"></span> 
+
+  <div class="BIGPRICEHEADER">
+  <div class="PriceFirstHeaders">
+            <div class="priceFirst">
+              <span class="ProductFontSize">Leikkaukset:</span> 
              <br></br> 
-             <span class="ProductFontSize">Färg:</span>  <span class="KlippningOne"></span> 
+              <span class="ProductFontSize">Väri:</span>  <br>
+                <span  class="product_paran">(extra käsittelyt 20,00 - 50,00 €)</span>
              <br></br>
-             <span class="ProductFontSizeSpan">Ögonbrynsplockningar och färgning, ögonfransfärg</span>
-             <span class="KlippningTwo">  13,50 - 27,00 € </span>
-             <br></br>
-             </p>
-             <p class="PaketDown">
-             <span class="ProductFontSizePaket">Paket</span>
-             <br></br>
-             <br></br>
+                    <span class="ProductFontSize">Kulmienmuotoilu ja -väri, ripsenväri</span>
+                
+             
+            </div>
+            </div>
+<% klipps.forEach(function(p){ %>
+             <div class="PriceFirstHeaderSpan" > 
+            <div class="PriceHeaderSpan"> 
             
-            
+            <span class="PriceRight"><%= p.first %></span>
+              <br></br>
+            <span class="PriceRight"><%= p.second %></span> <br>
+            <span  class="product_paran2"></span>
+            <br><br>
+              <span class="PriceRightFix"> <%= p.third %></span>
+              
+            </div>
+            </div>
+</div>
+<% }); %>  
+<!---- SECOND DIV BEGINS-->
+<p class="PaketCenter">Paketit</p>
+
+<div class="BigPriceSecondHeader">
+        <div class="PriceSecondHeaders">
+            <div class="PriceSecond">
             <% prices.forEach(function(p){ %>
-<div class="centerprice">
-            <div class="fixleft">
-            <div class="priceleft">
-            <span><%= p.first %></span>  <span class="priceright"><%= p.second %></span> 
-            </div>
-            </div>
-             </div>
-             <% }); %>  
+            <br>
+            <span><%= p.first %></span>
+          
             
+             <% }); %>  
+            </div>
+            </div>
+              
+        <div class="PriceSecondHeaders">
+            <div class="PriceSecond">
+            <% prices.forEach(function(p){ %>
+               
+             <br>
+      
+              <span class="priceright"><%= p.second %></span> 
+            
+             <% }); %>  
+            </div>
+            </div>
+            </div>
 
 
 
-             </p>
-             <p class="UpWash">
-              <span class="ProductFontSizeUpWash">Uppsättning</span>
-              <br></br>
-              <br></br>
-            UppsättningTvätt + föning (45 min)   <span class="SpanUpWash">45,50€</span>
-             <br></br>
-             Festuppsättning      <span class="SpanUpWashOne">32,00 - 60,00 €</span>
-             <br></br>
-             Bruduppsättning (inkl. 15 min planering) <span class="SpanUpWashTwo">67,50 €/h </span> 
-             </p>
-             <p class="Makeup">
-            <span class="ProductFontSizeMakeUp">Makeup</span>
-             <br></br>  <br></br>
-            Fest-, bröllops- och fotograferingsmakeup <span class="SpanMakeup">58,00 - 120,00 €</span>
-            <br></br><br></br> <br></br>
-            <span class="SpanMakeUpTwo">*Vid förhinder bör du avboka din tid senast 24h före den avtalade tidpunkten.
-              <br></br> 
-              Vi förbehåller oss rätten att fakturera 50% för de tjänster som avbokats på <br>
-              </br>samma dag eller om de inte alls avbokats.</span>
+            <!--THID DIV FUCKING BEGING, SWEET LOOORD-->
+
+<p class="PaketCenter">Kampaukset</p>
+
+<div class="BigPriceSecondHeader">
+        <div class="PriceSecondHeaders">
+            <div class="PriceSecond">
+            <% hairs.forEach(function(p){ %>
+            <br>
+            <span><%= p.first %></span>
+          
+            
+             <% }); %>  
+            </div>
+            </div>
+              
+        <div class="PriceSecondHeaders">
+            <div class="PriceSecondtest">
+            <% hairs.forEach(function(p){ %>
+               
+             <br>
+      
+              <span class="pricerightt"><%= p.second %></span> 
+            
+             <% }); %>  
+            </div>
+            </div>
+            </div>
+
+
+<!----FOURT DIV BEGINGS MOAHAHHA-->
+
+             
+
+<p class="PaketCenter">Meikit</p>
+
+<div class="BigPriceSecondHeader">
+        <div class="PriceSecondHeaders">
+            <div class="PriceSecond">
+            <% makes.forEach(function(p){ %>
+            <br>
+            <span><%= p.first %></span>
+          
+            
+             <% }); %>  
+            </div>
+            </div>
+           
+        <div class="PriceSecondHeaders">
+            <div class="PriceSecond">
+            <% makes.forEach(function(p){ %>
+               
+             <br>
+      
+              <span class="priceright"><%= p.second %></span> 
+            
+             <% }); %>  
+            </div>
+            </div>
+            </div>
+
+<!----FOURT DIV ends MOAHAHHA-->
+
+
+<div class="fakturacenter">
+ <p class="faktura">
+            <span class="SpanMakeUpTwo">*Esteen sattuessa peruuta aikasi viimeistään 24h ennen sovittua aikaa. 
+              <br>
+              Varaamme oikeuden laskuttaa samana päivänä peruutetuista tai kokonaan  <br>
+              peruuttamattomista palveluista 50% varatun työn hinnasta.</span>
               </p>
+              <div  id="Contact"></div>
+</div>
+</div>
+
+           
 
 
 
-    <div  id="Contact"></div>
-         </div>
-
+    
+  
    <!--- price list ends-->
 
          <div class="ContactUs" id="Contact">
@@ -240,4 +322,4 @@
 
 
         
-  <% include _layouts/swefooter %>
+  <% include _layouts/finfooter %>

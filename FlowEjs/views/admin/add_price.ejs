@@ -6,19 +6,22 @@
 
 <form method="post" action="/admin/price/add-price" enctype="multipart/form-data">
 
+
+
+<br>
 <div class="form-group">
-<label for="">name</label>
-<input class="form-control"  id="first" name="first"  placeholder="content"><%= first %>
+<label for="">title</label>
+<input class="form-control"   name="first" value="<%= first %>" placeholder="title">
 </div>
 
 <div class="form-group">
-<label for="">If necessary</label>
-<input name="second" class="form-control" id="second"   placeholder="Content"><%= second %> 
+<label for="">pris</label>
+<input name="second" class="form-control"    placeholder="pris"><%= second%> 
 </div>
 
 
 
-
+<br>
 <button class="btn btn-default">Submit</button>
 </form>
 

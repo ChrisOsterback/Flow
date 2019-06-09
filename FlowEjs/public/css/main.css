@@ -1,42 +1,6 @@
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 
-.centerprice {
-    left:500px;
-}
 
-.priceleft {
-  
-}
-
-.priceright {
-    margin-left:250px;
-    
-}
-
-.staffnew {
-    content: "";
-    clear: both;
-    display: table;
-    margin-left:470px;
- 
-    
-}
-.staffrow {
-    
-    float:left;
-    width:35%;
-    margin-top:50px;
-}
-
-.staffname {
-    font-size:24px;
-    
-}
-
-.staffworktitle {
-    font-size: 14px;
-    color:#00BFBF;
-}
 
 #ScrollTop {
     width: 58%;
@@ -85,17 +49,17 @@ nav ul li a {
 }
 
 .FLanguages {
-    margin-left:100px !important;
+    margin-left:80px !important;
     width:82px
 }
 
 .Ftinyeight img {
-    width:82px;
+    width:80px;
 }
 
 .FFlowRight{
     margin-left:25px;
-    width:102px;
+    width:50px;
    
 }
 
@@ -257,10 +221,17 @@ img.buttonImg {
     top:450px;
     left:570px;
 }
-
 img.buttonMoreImg {
     position: absolute;
     top:450px;
+    height: 90px;
+    left:1020px;
+}
+
+img.buttonMoreImgeng {
+    position: absolute;
+    top:450px;
+    height: 90px;
     left:1020px;
 }
 
@@ -340,113 +311,32 @@ p {
 }
 
 
-.StaffPic {
-    margin-top:75px;
-}
 
-/* Pic margin ----*/
-.HM {
-    margin-left:180px;
-}
- /* Pic margin ----*/
+.staffnew {
+    content: "";
+    clear: both;
+    display: table;
+    margin-left:470px;
  
- /* First para/span move ----*/
-.Amove {
-    float:left;
-}
-.Hmove {
     
-   float:right;
 }
-
-.Pmove {
-    font-size:24px;
-    font-family: Arial,  sans-serif;
-    width: 28.7%;
-    margin-left:690px; 
-}
-
-/* First para/span move  ENDs----*/
-/* Second/blue para/span move  ----*/
-.PmoveSecond {
-    font-size:14px;
-    font-family: Arial,  sans-serif;
-    width: 34%;
-    margin-left:580px;
-    color:#00BFBF;
-      
-}
-
-.Bluemove {
-    float:left;
-}
-.BluemoveSecond {
-    float:right;
-}
-/* Second/Blue para/span move  ENDs----*/
-
-/* CANT WAIT TO REWRITE THIS SHIT */
-.StaffPicturesOne {
-    margin-top:100px;
-}
-
-/*Second row of para on second div*/
-.PmoveSecondDiv {
-    font-size:24px;
-    font-family: Arial,  sans-serif;
-    width: 29%;
-    margin-left:663px; 
-}
-
-.AmoveSecondDiv {
-    float:left;
-}
-.HmoveSecondDiv {
+.staffrow {
     
-   float:right;
+    float:left;
+    width:35%;
+    margin-top:50px;
 }
 
-/*Second row of para on second div ENDs*/
+.staffname {
+    font-size:24px;
+    
+}
 
-/*Second row of para on second div SECOND PARA/BLUE*/
-.PmoveSecondDivP {
-    font-size:14px;
-    font-family: Arial,  sans-serif;
-    width: 27.5%;
-    margin-left:687px; 
+.staffworktitle {
+    font-size: 14px;
     color:#00BFBF;
 }
 
-.BluemoveDiv {
-    float:right;
-}
-
-.BluemoveSecondDiv {
-    float:left;
-}
-/*Second row of para on second div SECOND PARA/BLUE Ends*/
-/* CANT WAIT TO REWRITE THIS SHIT Ends*/
-
-.StaffPicturesTwo {
-    margin-top:100px;
-    margin-left:-480px;
-}
-
-.PmoveThirdDiv {
-    font-size:24px;
-    font-family: Arial,  sans-serif;
-    width: 27.5%;
-    margin-left:455px; 
-    
-}
-
-.PmoveThirdDivP {
-    font-size:14px;
-    font-family: Arial,  sans-serif;
-    width: 27.5%;
-    margin-left:455px;
-    color:#00BFBF;   
-}
 
 
 .SocialMediaSmallButtons {
@@ -496,14 +386,29 @@ p {
 
 /* ProductPRICE BEGINS ---------------------< */
 
-.ProductsPrice {
+.pricerightt {
+    margin-left:180px;
+    
+}
+.PriceSecondtest {
+    display: inline-block;
+    text-align: left; 
+}
+
+.priceright {
+    margin-left:250px;
+    
+}
+
+
+
+.Productsimgs {
     text-align: center;
     margin-bottom: 150px;
 }
-
 .ProductHeader {
     font-size: 24px;
-    margin-top:100px;
+    margin-top:200px;
 }
 
 .ProductMarginTop {
@@ -524,87 +429,126 @@ p {
     margin-left:600px;
 }
 
-.ProductPriceSecondHeader {
-    font-size: 24px;
+
+
+/* PRODUCTS IMG ENDS */
+
+.ProductsPrice{
+    text-align: center;
+    
+}
+
+.PriceHeader {
+    font-size:24px;
+}
+
+.PUSHDOWNPRICE {
+margin-bottom: 150px;
+}
+
+
+
+/*---------FIRST DIV HEADER */
+.BIGPRICEHEADER {
+    text-align: center;
+    margin-bottom: 350px;
     margin-top:100px;
+    margin-left:36%;
+    
+}
+
+.PriceFirstHeaders {
+    float:left;
+    
+}
+
+.priceFirst {
+    
+    display: inline-block;
+    text-align: left;
+    
+}
+
+.PriceFirstHeaderSpan {
+    float:left;
+    margin-left:162px;
+}
+
+.PriceHeaderSpan {
+    display: inline-block;
+    text-align: left;    
+}
+
+.PriceRightFix {
+    margin-top:-15px !important;
     
 }
 
 .ProductFontSize {
     font-size: 16px;
     font-weight: bold;
-}
-.Klippning {
-    margin-left:350px;
-}
-.KlippningOne {
-    margin-left:390px;
-}
-.ProductFontSizeSpan {
-    font-size: 16px;
-    font-weight: bold;
-}
-
-.KlippningTwo {
-    margin-left:20px;
-}
-
-.PaketDown {
-    Margin-top:50px;
-}
-.ProductFontSizePaket {
-    text-decoration: underline;
-    font-size: 18px;
-    font-weight: bold;
-    margin-left:-475px;
    
 }
-.SpanPaket {
-    margin-left:267px;
-}
-.SpanPaketOne {
-    margin-left:227px;
+
+.product_paran2 {
+    font-size:17px;
 }
 
+/*---------FIRST DIV HEADER ENDS */
 
-.UpWash {
-    margin-top: 50px;
-}
 
-.ProductFontSizeUpWash {
-    text-decoration: underline;
-    font-size: 18px;
+/*---------SECOND DIV HEADER BEING */
+.PaketCenter {
+    margin-left:36%;
+    font-size: 16px;
     font-weight: bold;
-    margin-left:-430px;
-}
-
-.SpanUpWash {
-    margin-left:256px;
-}
-
-.SpanUpWashOne {
-    margin-left:325px;
-}
-.SpanUpWashTwo {
-    margin-left:200px;
-}
-.Makeup {
-    margin-top:50px;
     
 }
-.ProductFontSizeMakeUp {
-    text-decoration: underline;
-    font-size: 18px;
-    font-weight: bold;
-    margin-left:-470px;
+
+
+.BigPriceSecondHeader {
+    text-align: center;
+    margin-bottom: 200px;
+    margin-top:50px;
+    margin-left:36%;
+
 }
 
-.SpanMakeup {
-    margin-left:145px;
+.PriceSecondHeader {
+    float:left;
 }
 
-.SpanMakeUpTwo {
+
+.PriceSecond {
+    display: inline-block;
+    text-align: left; 
+}
+
+
+.PriceSecondHeaders {
+    float:left;
+
+}
+
+.PriceSecond {
+    display: inline-block;
+    text-align: left;  
+
+}
+
+
+
+/*---------SECOND DIV HEADER ENDS */
+
+
+
+.fakturacenter {
+    margin-left:36%
+}
+
+.faktura {
     text-align: left;
+    font-weight: bold;
     
 }
 /* ProductPRICE ENDS ---------------------< */
@@ -618,6 +562,7 @@ height:350px;
 position: relative;
 font-family: Arial,  sans-serif;
 font-weight: normal;
+color:white;
 }
 
 .ContactUs img {
@@ -719,7 +664,7 @@ font-weight: normal;
     
 }
 a {
-    color:white;
+    color:white !important;
 }
 
 .FooterNavi {

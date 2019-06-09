@@ -1,0 +1,40 @@
+<%- include('../_layouts/adminheader/adminheader') %>
+
+<h2 class="page-title">Edit Content</h2>
+<a href="/engadmin/engprice" class="btn btn-primary">Back to all Content page</a>
+<br><br>
+
+<form method="post" action="/engadmin/engprice/edit-engklipp/<%= id %>" enctype="multipart/form-data">
+    
+
+<br>
+<div class="form-group">
+<label for="">CUT PRICE</label>
+<input class="form-control" name="first" value="<%= first %>" placeholder="title">
+</div>
+
+<div class="form-group">
+<label for="">HAIR COLOR PRICE</label>
+<input name="second" class="form-control"  value="<%= second %>"  placeholder="pris"> 
+</div>
+
+<div class="form-group">
+<label for="">EYEBROW PLUCKING PRICE</label>
+<input name="third" class="form-control"  value="<%= third %>"  placeholder="pris"> 
+</div>
+
+
+
+
+
+
+  <button class="btn btn-default">Submit</button>
+  </form>
+  
+
+
+
+
+
+
+<%- include('../_layouts/adminheader/adminfooter') %>

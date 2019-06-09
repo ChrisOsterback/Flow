@@ -14,6 +14,13 @@ var StaffSchema = mongoose.Schema({
     worktitle: {
         type: String
     },
+    sweworktitle: {
+        type: String
+    },
+    engworktitle: {
+        type: String
+    },
+
   
     image: {
         type: String

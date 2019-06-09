@@ -104,12 +104,21 @@ var users = require('./routes/users.js');
 
 var adminContent = require('./routes/staffcontent.js')
 var PriceContent = require('./routes/pricecontent.js')
+var SweContent = require('./routes/sweroutes/swecontent.js')
+var EngContent = require('./routes/engroutes/engcontent.js')
+var Swedish = require('./routes/swedish.js')
+var English = require('./routes/english.js')
+
 
 
 
 app.use('/users', users);
 app.use('/admin/content', adminContent);
 app.use('/admin/price', PriceContent);
+app.use('/engadmin/engprice', EngContent);
+app.use('/sweadmin/sweprice', SweContent);
+app.use('/swedish', Swedish);
+app.use('/english', English);
 
 
 
