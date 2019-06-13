@@ -1,0 +1,136 @@
+<%- include('../_layouts/adminheader/adminheader') %>
+
+<h2 class="page-title"> English page PriceList</h2>
+
+
+
+
+
+
+<br><br>
+<h1>HAIR CUT PRICE</h1>
+<a href="/engadmin/engprice/add-engklipp" class="btn btn-primary">Add hair cut content</a>
+<table class="table table-striped alignmiddle">
+    <thead>
+        <tr class="home">
+            <th>price</th>
+            <th>price</th>
+            <th>price</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% engklipps.forEach(function(engklipps){ %>
+        <tr>
+            <td><%= engklipps.first %></td>
+            <td><%= engklipps.second %></td>
+            <td><%= engklipps.third %></td>  
+            </td>
+            <td><a href="/engadmin/engprice/edit-engklipp/<%= engklipps._id %>">Edit</a></td>
+            <td><a class="confirmDeletion" href="/engadmin/engprice/delete-engklipp/<%= engklipps._id %>">Delete</a></td>
+        </tr>
+        <% }); %>
+    </tbody>
+</table>
+
+<br><br><br><br>
+
+<h1>PACKAGE PRICE</h1>
+<a href="/engadmin/engprice/add-engprice" class="btn btn-primary">Add new package content</a>
+
+<table class="table table-striped alignmiddle">
+    <thead>
+        <tr class="home">
+            <th>title</th>
+            <th>price</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% engprices.forEach(function(engprice){ %>
+        <tr>
+            <td><%= engprice.first %></td>
+            <td><%= engprice.second %></td>
+            
+
+               
+            </td>
+            <td><a href="/engadmin/engprice/edit-engprice/<%= engprice._id %>">Edit</a></td>
+            <td><a class="confirmDeletion" href="/engadmin/engprice/delete-engprice/<%= engprice._id %>">Delete</a></td>
+        </tr>
+        <% }); %>
+    </tbody>
+</table>
+
+<!-- FUCKING ADD HAIR LOL THIS IS MESSY-->
+<br><br><br><br>
+
+
+
+<h1>HAIR STYLE PRICE</h1>
+<a href="/engadmin/engprice/add-enghair" class="btn btn-primary">Add new hair style content</a>
+<table class="table table-striped alignmiddle">
+    <thead>
+        <tr class="home">
+            <th>name</th>
+            <th>price</th>
+            
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% enghairs.forEach(function(enghairs){ %>
+        <tr>
+            <td><%= enghairs.first %></td>
+            <td><%= enghairs.second %></td>
+            
+            </td>
+            <td><a href="/engadmin/engprice/edit-enghair/<%= enghairs._id %>">Edit</a></td>
+            <td><a class="confirmDeletion" href="/engadmin/engprice/delete-enghair/<%= enghairs._id %>">Delete</a></td>
+        </tr>
+        <% }); %>
+    </tbody>
+</table>
+
+<br><br><br><br>
+
+
+
+<br>
+
+
+<br><br>
+
+<h1>MAKEUP PRICE</h1>
+<a href="/engadmin/engprice/add-engmake" class="btn btn-primary">Add new make up content</a>
+<table class="table table-striped alignmiddle">
+    <thead>
+        <tr class="home">
+            <th>Makeup</th>
+            <th>price</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% engmakes.forEach(function(engmake){ %>
+        <tr>
+            <td><%= engmake.first %></td>
+            <td><%= engmake.second %></td> 
+            </td>
+            <td><a href="/engadmin/engprice/edit-engmake/<%= engmake._id %>">Edit</a></td>
+            <td><a class="confirmDeletion" href="/engadmin/engprice/delete-engmake/<%= engmake._id %>">Delete</a></td>
+        </tr>
+        <% }); %>
+    </tbody>
+</table>
+
+
+
+
+
+
+<%- include('../_layouts/adminheader/adminfooter') %>

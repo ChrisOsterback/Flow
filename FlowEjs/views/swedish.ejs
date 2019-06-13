@@ -1,0 +1,325 @@
+<% include _layouts/sweheader %>
+
+
+
+<div id="Home" >
+<img class="wide" src='/sweimg/background.jpg' alt="background"/>
+<div class="flow">
+ <p class="megatext">F &nbsp; L  &nbsp; O  &nbsp; W</p>
+
+ <p class="minitext"><span class="Quote">
+     </span>
+     <i class="fas fa-circle"></i>Hair <span class="one">
+         <i class="fas fa-circle"></i>Make up</span>
+         <span class="one"><i class="fas fa-circle"></i>Shop</span></p>
+
+         </div>
+ 
+
+
+ </div>
+ 
+ <div>
+
+    
+
+     <a href="https://slotti.fi/booking/Flow/"><img class="buttonImg" src='/sweimg/online.png' alt="online"/></a>
+
+     </div>
+     <a href="#Social"><img class="buttonMoreImg" src='/finimg/sociala.png' alt="online"/></a>
+
+     </div>
+ 
+
+     
+
+     
+ </div>     
+ 
+<!--PICTURE ENDS -->
+
+ </div>
+ <div class="center" id="Welcome">
+           <p class="FirstPara">VÄLKOMMEN TILL </p>
+           <p class="FontB">FLOW</p>
+           <p class="NoM">REWELL CENTER 139</p>
+           <p>Vi finns i VASA, i Rewell Centers första våning, med fönster mot Rådhusgatan och Stadshuset.
+             <br>För tidsreservationer ring:   </p>
+             <p class="Number">06 312 0750</p>
+             <p class="FontMB">Öppet tider</p>
+             <p class="FontMB" >Må-Fr <span class="SpaceOne"> 10-18 </span> <br>
+             LÖ <span class="SpaceTwo">  10-15 </span></p>
+             
+             <p class="Pbottom">(eller enligt överrenskommelse)</p>
+             <div id="Staff"></div>
+         </div>
+<!----WELCOME ENDS-->
+
+         <div class="centerStaff" >
+          <p>VÅR PERSONAL</p>
+          <img src=/globalimg/Line.png alt="Line" />
+
+          <div class="staffnew">
+          
+           <% staffs.forEach(function(p){ %>
+          <div class="staffrow">
+         <img src="/staff_images/<%= p.id %>/<%= p.image %>" id="<%= p.slug %>" alt="staff" >
+         <p class="staffname"><%= p.title %></p>  <p class="staffworktitle"><%= p.sweworktitle %></p>
+    </div>
+    <% }); %>  
+    
+     </div>
+     
+
+          <div class="StaffPic">
+    
+            <div id="GoFlow"></div>
+            <div class="SocialMediaSmallButtons"><a href="https://www.instagram.com/salonflowvaasa/"><img src='globalimg/insta.jpg' alt="Instagram"></a>
+            <a href="https://www.facebook.com/FLOWVAASA/"> <img class="IconLeft" src='globalimg/Facebook.jpg' alt="Facebook"></a>
+            <a href="http://flowvaasa.blogspot.com/"><img class="IconLeft" src='globalimg/Blog.jpg' alt="Blog"></a></div>
+            </div>
+               
+               
+                </div>
+                <!--staff ends-->
+
+                <div class="WithFlow" >
+          <p class="GoFlow">GO WITH THE FLOW</p>
+          <p class="GoFlowBlue">OM FLOW</p>
+            <p class="GoFlowGoda">Vi är en  trendig frisörsalong i hjärtat av Vasa. 
+            Förutom klippningar, färgningar och stylningar erbjuder vi också make up tjänster för alla tillfällen, såsom fester  <br>
+            och bröllop. Vi kan också göra extremare make up för t.ex fotograferingar.  Vi här på Flow är professionella, fantasifulla och har ett öga för stil. <br>
+            Om du vill, och är sugen på något nytt, planerar vi gärna en ny look åt dig.
+                </p>
+                <br>  
+                <p>Välkommen in, du är i goda händer! </p>
+                <div id="Products"></div>
+         </div>
+  
+  <!-- flow ends-->>
+
+         <div class="Productsimgs" >
+          <p class="ProductHeader">PRODUKTER</p>
+           <img src='/globalimg/Line.png' alt="Product" />
+
+
+          <div class="ProductImgDown">
+          <img src='/globalimg/Wella.jpg'  alt="Wella" />
+          <img class="ProductImgLeft" src='/globalimg/Fudge.jpg'  alt="Fudge" />
+          <img class="ProductImgLeft" src='/globalimg/ProSeb.jpg'  alt="Proseb" />
+          
+
+
+          </div>
+          <div class="ProductImgDownTwo">
+          <img  src='/globalimg/GHD.jpg'  alt="GHD" />
+          <img class="ImgGigaLeft" src='/globalimg/Evo.jpg'  alt="Evo" />
+          <div id="Prices"></div>
+         
+  
+          </div>
+          </div>
+
+          
+             <!--PRODUCT ENDS-->
+
+  
+     
+  
+
+  <div class="PUSHDOWNPRICE">
+  <div class="ProductsPrice" >
+             <p class="PriceHeader" >PRISLISTA</p>
+             <img src='/globalimg/Line.png'  alt="PriceLine" />
+        </div>
+   
+
+  <div class="BIGPRICEHEADER">
+  <div class="PriceFirstHeaders">
+            <div class="priceFirst">
+              <span class="ProductFontSize">Klippning:</span> 
+             <br></br> 
+              <span class="ProductFontSize">Färg:</span>  <br>
+                <span  class="product_paran">(extra behandlingar 20,00 - 50,00 €)</span>
+             <br></br>
+                    <span class="ProductFontSize">Ögonbrynsplockningar och färgning, ögonfransfärg</span>
+                
+             
+            </div>
+            </div>
+<% sweklipps.forEach(function(p){ %>
+             <div class="SwePriceFirstHeaderSpan" > 
+            <div class="PriceHeaderSpan"> 
+            
+            <span class="PriceRight"><%= p.first %></span>
+              <br></br>
+            <span class="PriceRight"><%= p.second %></span> <br>
+            <span  class="product_paran2"></span>
+            <br><br>
+              <span class="PriceRightFix"> <%= p.third %></span>
+              
+            </div>
+            </div>
+</div>
+<% }); %>  
+<!---- SECOND DIV BEGINS-->
+<p class="PaketCenter">Paket</p>
+
+<div class="BigPriceSecondHeader">
+        <div class="PriceSecondHeaders">
+            <div class="PriceSecond">
+            <% sweprices.forEach(function(p){ %>
+            <br>
+            <span><%= p.first %></span>
+          
+            
+             <% }); %>  
+            </div>
+            </div>
+              
+        <div class="PriceSecondHeaders">
+            <div class="PriceSecond">
+            <% sweprices.forEach(function(p){ %>
+               
+             <br>
+      
+              <span class="priceright"><%= p.second %></span> 
+            
+             <% }); %>  
+            </div>
+            </div>
+            </div>
+
+
+
+            <!--THID DIV FUCKING BEGING, SWEET LOOORD-->
+
+<p class="PaketCenter">Uppsättning</p>
+
+<div class="BigPriceSecondHeader">
+        <div class="PriceSecondHeaders">
+            <div class="PriceSecond">
+            <% swehairs.forEach(function(p){ %>
+            <br>
+            <span><%= p.first %></span>
+          
+            
+             <% }); %>  
+            </div>
+            </div>
+              
+        <div class="PriceSecondHeaders">
+            <div class="PriceSecondtest">
+            <% swehairs.forEach(function(p){ %>
+               
+             <br>
+      
+              <span class="pricerightt"><%= p.second %></span> 
+            
+             <% }); %>  
+            </div>
+            </div>
+            </div>
+
+
+<!----FOURT DIV BEGINGS MOAHAHHA-->
+
+             
+
+<p class="PaketCenter">Makeup</p>
+
+<div class="BigPriceSecondHeader">
+        <div class="PriceSecondHeaders">
+            <div class="PriceSecond">
+            <% swemakes.forEach(function(p){ %>
+            <br>
+            <span><%= p.first %></span>
+          
+            
+             <% }); %>  
+            </div>
+            </div>
+           
+        <div class="PriceSecondHeaders">
+            <div class="PriceSecond">
+            <% swemakes.forEach(function(p){ %>
+               
+             <br>
+      
+              <span class="swepriceright"><%= p.second %></span> 
+            
+             <% }); %>  
+            </div>
+            </div>
+            </div>
+
+<!----FOURT DIV ends MOAHAHHA-->
+
+
+<div class="fakturacenter">
+ <p class="faktura">
+            <span class="SpanMakeUpTwo">*Vid förhinder bör du avboka din tid senast 24h före den avtalade tidpunkten.
+              <br>
+              Vi förbehåller oss rätten att fakturera 50% för de tjänster som avbokats på   <br>
+              samma dag eller om de inte alls avbokats.</span>
+              </p>
+              <div  id="Contact"></div>
+</div>
+</div>
+
+           
+
+
+
+    
+  
+   <!--- price list ends-->
+
+         <div class="ContactUs" id="Contact">
+           <img src='/globalimg/ContactUs.jpg' alt="contactus"/>
+           <p class="ContactUsHeader">KONTAKTA OSS</p>
+           <br>
+           <p class="ContactUsPara">Vi finns i
+           <span class="ContactUsSpan"> REWELL CENTERS första våning,   </span> 
+           i centrum av
+           <br>
+           <span  class="ContactUsSpan">VASAN  </span>
+           <br><span class="ContactUsSpanBig">06 312 0750</span>
+           </p>
+
+           
+        <div id="Social"></div>
+            </div >
+      <!--- contact ends-->>
+
+            <div class="Maps" >
+           <div class="MapsMoveLeft">
+           <div >
+            <a href="https://www.facebook.com/FLOWVAASA/"><img src='/globalimg/Facebook.jpg' alt="Facebook" /></a>
+            <a href="https://www.instagram.com/salonflowvaasa/">  <img class="MapsSocialSpread" src='/globalimg/insta.jpg' alt="Insta" /></a> 
+            <a href="http://flowvaasa.blogspot.com/"><img class="MapsSocialSpread" src='/globalimg/Blog.jpg' alt="Blog" /></a> 
+            </div>
+
+            <p class="MapsDown">
+            <span class="MapNumber">06 312 0750</span> 
+            <br>
+            <span class="MapInfo">info@flowvasa.fi</span>
+            </p>
+            </div>
+
+
+            <div class="GoogleMaps">
+            <div class="mapouter"><div class="gmap_canvas">
+              <iframe title="Map" width="600" height="500" id="gmap_canvas" 
+            src="https://maps.google.com/maps?q=Flow%2C%20Raastuvankatu%2019%2C%2065100%20Vaasa&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+              frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe> 
+              </div> </div>
+              
+
+            </div>
+
+</div>
+
+
+        
+  <% include _layouts/swefooter %>

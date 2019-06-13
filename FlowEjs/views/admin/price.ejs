@@ -1,0 +1,136 @@
+<%- include('../_layouts/adminheader/adminheader') %>
+
+<h2 class="page-title">PriceList</h2>
+
+
+
+
+
+
+<br><br>
+<h1>HAIR CUT PRICE</h1>
+<a href="/admin/price/add-klipp" class="btn btn-primary">Add hair cut content</a>
+<table class="table table-striped alignmiddle">
+    <thead>
+        <tr class="home">
+            <th>price</th>
+            <th>price</th>
+            <th>price</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% klipps.forEach(function(klipps){ %>
+        <tr>
+            <td><%= klipps.first %></td>
+            <td><%= klipps.second %></td>
+            <td><%= klipps.third %></td>  
+            </td>
+            <td><a href="/admin/price/edit-klipp/<%= klipps._id %>">Edit</a></td>
+            <td><a class="confirmDeletion" href="/admin/price/delete-klipp/<%= klipps._id %>">Delete</a></td>
+        </tr>
+        <% }); %>
+    </tbody>
+</table>
+
+<br><br><br><br>
+
+<h1>PACKAGE PRICE</h1>
+<a href="/admin/price/add-price" class="btn btn-primary">Add new package content</a>
+
+<table class="table table-striped alignmiddle">
+    <thead>
+        <tr class="home">
+            <th>title</th>
+            <th>price</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% prices.forEach(function(price){ %>
+        <tr>
+            <td><%= price.first %></td>
+            <td><%= price.second %></td>
+            
+
+               
+            </td>
+            <td><a href="/admin/price/edit-price/<%= price._id %>">Edit</a></td>
+            <td><a class="confirmDeletion" href="/admin/price/delete-price/<%= price._id %>">Delete</a></td>
+        </tr>
+        <% }); %>
+    </tbody>
+</table>
+
+<!-- FUCKING ADD HAIR LOL THIS IS MESSY-->
+<br><br><br><br>
+
+
+
+<h1>HAIR STYLE PRICE</h1>
+<a href="/admin/price/add-hair" class="btn btn-primary">Add new hair style content</a>
+<table class="table table-striped alignmiddle">
+    <thead>
+        <tr class="home">
+            <th>name</th>
+            <th>price</th>
+            
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% hairs.forEach(function(hairs){ %>
+        <tr>
+            <td><%= hairs.first %></td>
+            <td><%= hairs.second %></td>
+            
+            </td>
+            <td><a href="/admin/price/edit-hair/<%= hairs._id %>">Edit</a></td>
+            <td><a class="confirmDeletion" href="/admin/price/delete-hair/<%= hairs._id %>">Delete</a></td>
+        </tr>
+        <% }); %>
+    </tbody>
+</table>
+
+<br><br><br><br>
+
+
+
+<br>
+
+
+<br><br>
+
+<h1>MAKEUP PRICE</h1>
+<a href="/admin/price/add-make" class="btn btn-primary">Add new make up content</a>
+<table class="table table-striped alignmiddle">
+    <thead>
+        <tr class="home">
+            <th>Makeup</th>
+            <th>price</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% makes.forEach(function(make){ %>
+        <tr>
+            <td><%= make.first %></td>
+            <td><%= make.second %></td> 
+            </td>
+            <td><a href="/admin/price/edit-make/<%= make._id %>">Edit</a></td>
+            <td><a class="confirmDeletion" href="/admin/price/delete-make/<%= make._id %>">Delete</a></td>
+        </tr>
+        <% }); %>
+    </tbody>
+</table>
+
+
+
+
+
+
+<%- include('../_layouts/adminheader/adminfooter') %>

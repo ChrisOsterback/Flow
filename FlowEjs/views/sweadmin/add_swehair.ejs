@@ -1,0 +1,32 @@
+<%- include('../_layouts/adminheader/adminheader') %>
+
+<h2 class="page-title">Add content</h2>
+<a href="/sweadmin/sweprice" class="btn btn-primary">Back to all content page</a>
+<br><br>
+
+<form method="post" action="/sweadmin/sweprice/add-swehair" enctype="multipart/form-data">
+
+
+
+<br>
+<div class="form-group">
+<label for="">CUT PRICE</label>
+<input class="form-control"   name="first" value="<%= first %>" placeholder="title">
+</div>
+
+<div class="form-group">
+<label for="">HAIR COLOR PRICE</label>
+<input name="second" class="form-control"    placeholder="pris"><%= second%> 
+</div>
+
+
+
+
+<button class="btn btn-default">Submit</button>
+</form>
+
+
+
+
+
+<%- include('../_layouts/adminheader/adminfooter') %>

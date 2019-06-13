@@ -1,0 +1,33 @@
+<%- include('../_layouts/adminheader/adminheader') %>
+
+<h2 class="page-title">Edit Content</h2>
+<a href="/sweadmin/sweprice" class="btn btn-primary">Back to all Content page</a>
+<br><br>
+
+<form method="post" action="/sweadmin/sweprice/edit-sweprice/<%= id %>" enctype="multipart/form-data">
+    
+
+<br>
+<div class="form-group">
+<label for="">title</label>
+<input class="form-control" name="first" value="<%= first %>" placeholder="title">
+</div>
+
+<div class="form-group">
+<label for="">pris</label>
+<input name="second" class="form-control"  value="<%= second %>"  placeholder="pris"> 
+</div>
+
+
+
+
+  <button class="btn btn-default">Submit</button>
+  </form>
+  
+
+
+
+
+
+
+<%- include('../_layouts/adminheader/adminfooter') %>

@@ -1,0 +1,1276 @@
+
+
+@media screen and (max-width: 1000px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+  @media screen and (max-width: 1000px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* header/ big pic */
+@media only screen and (min-width: 1300px) and (max-width: 1600px) {
+    p.megatext {
+      font-size:125px;
+    }
+    #ScrollTop {
+        margin-left:11%;
+    }
+ 
+  }
+
+
+  @media only screen and (min-width: 1300px) and (max-width: 1600px) {
+    img.buttonImg {
+        left: 40%;
+    transform: translate(-55%, 0%);
+    }
+    img.buttonMoreImg {
+        left: 66%;
+    transform: translate(-55%, 0%);
+    }
+  }
+
+/* header/ big pic */
+
+/* staff pictures */
+  @media only screen and (min-width: 1300px) and (max-width: 1600px) {
+    .staffnew {
+        margin-left:21%;
+    }
+    .staffrow {
+        width:37%
+    }
+  }
+
+/* staff pictures */
+
+/* price list */
+
+@media only screen and (min-width: 1300px) and (max-width: 1600px) {
+    .BIGPRICEHEADER {
+        margin-left:32%;
+    }
+    .PaketCenter {
+        margin-left:32%
+    }
+    .BigPriceSecondHeader {
+        margin-left:32%
+    }
+    .fakturacenter {
+        margin-left:32%
+    }
+  }
+
+  /* price list */
+
+/* CONTACT */
+
+  @media only screen and (min-width: 1300px) and (max-width: 1600px) {
+    .ContactUsHeader {
+        left: 50%;
+    transform: translate(-50%, -50%);
+    top: 40px;
+    }
+}
+
+
+/* CONTACT */
+
+/* GOOGLE MAPS */
+
+@media only screen and (min-width: 1300px) and (max-width: 1600px) {
+    .MapsMoveLeft {
+     left:200px;
+    }
+    .GoogleMaps {
+        left:650px;
+    }
+}
+
+
+/* GOOGLE MAPS */
+
+/* Footer */
+
+@media only screen and (min-width: 1300px) and (max-width: 1600px) {
+    .FooterNavi {
+        margin-left:280px;
+    }
+
+}
+
+
+/* Footer */
+
+/* 1440+ Respo1440 ENDS */
+
+/* 1024+ respo1024 Begins */
+
+
+
+/* header/ big pic */
+@media only screen and (min-width: 1024px) and (max-width: 1299px) {
+    p.megatext {
+      font-size:100px;
+      height:120px;
+    }
+    p.minitext {
+        font-size:35px;
+    }
+    .one {
+        margin-left:50px;
+    }
+    #ScrollTop {
+        margin-left:1.5%;
+    }
+    
+  }
+
+  @media only screen and (min-width: 1024px) and (max-width: 1299px) {
+    img.buttonImg {
+        left: 40%;
+        transform: translate(-55%, 0%);
+        height:60px;
+        width: 300px;
+    }
+    img.buttonMoreImg {
+        left: 66%;
+transform: translate(-55%, 0%);
+        height:60px;
+    }
+  }
+
+/* header/ big pic */
+
+/* staff pictures */
+  @media only screen and (min-width: 1024px) and (max-width: 1299px) {
+    .staffnew {
+        margin-left:9%;
+    }
+    .staffrow {
+        width:46%
+    }
+    .ProductHeader {
+       margin-top: 100px;
+    }
+  }
+
+/* staff pictures */
+
+/* price list */
+
+@media only screen and (min-width: 1024px) and (max-width: 1299px) {
+    .BIGPRICEHEADER {
+        margin-left:25%;
+    }
+    .PaketCenter {
+        margin-left:25%
+    }
+    .BigPriceSecondHeader {
+        margin-left:25%
+    }
+    .fakturacenter {
+        margin-left:25%
+    }
+  }
+
+  /* price list */
+
+/* CONTACT */
+
+  @media only screen and (min-width: 1024px) and (max-width: 1299px) {
+    .ContactUsHeader {
+        left: 50%;
+    transform: translate(-50%, -50%);
+    top: 50px;
+    }
+}
+
+
+/* CONTACT */
+
+/* GOOGLE MAPS */
+
+@media only screen and (min-width: 1024px) and (max-width: 1299px) {
+    .MapsMoveLeft {
+     left:25px;
+    }
+    .GoogleMaps {
+        left:400px;
+    }
+}
+
+
+/* GOOGLE MAPS */
+
+/* Footer */
+
+@media only screen and (min-width: 1024px) and (max-width: 1299px) {
+    .FooterNavi {
+        margin-left:80px;
+    }
+
+}
+
+
+/* Footer */
+
+
+/* 1024+ Respo1024 ENDS */
+
+/* 768+ respo768 Begins */
+
+
+/* header/ big pic */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    p.megatext {
+      font-size:75px;
+      height:120px;
+    }
+    p.minitext {
+        font-size:28px;
+    }
+    .one {
+        margin-left:25px;
+    }
+   #Home {
+    height:750px !important;
+   }
+   img.wide {
+    height:750px;
+   }
+  }
+
+
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    img.buttonImg {
+        left: 40%;
+        transform: translate(-55%, 0%);
+        height:50px;
+        width: 270px;
+        top: 400px;
+    }
+    img.buttonMoreImg {
+        left: 68%;
+        transform: translate(-55%, 0%);
+        height:50px;
+        top: 400px;
+    }
+  }
+
+/* header/ big pic */
+
+/* staff pictures */
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .staffnew {
+        margin-left:0%;
+    }
+    .staffrow {
+        width:100%
+    }
+    .ProductHeader {
+       margin-top: 100px;
+    }
+  }
+
+/* staff pictures */
+
+/* PRODUCT PICTURES */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+.ProductImgLeft {
+    margin-left:0px;
+}
+.ProductImgDownTwo {
+    margin-top:50px;
+}
+.ImgGigaLeft {
+    margin-left:0%;
+}
+}
+
+/* PRODUCT PICTURES */
+
+
+/* price list */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .BIGPRICEHEADER {
+        margin-left:16%;
+    }
+    .PaketCenter {
+        margin-left:16%
+    }
+    .BigPriceSecondHeader {
+        margin-left:16%
+    }
+    .fakturacenter {
+        margin-left:16%
+    }
+  }
+
+  /* price list */
+
+/* CONTACT */
+
+  @media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .ContactUsHeader {
+        left: 50%;
+    transform: translate(-50%, -50%);
+    top: 80px;
+    font-size:30px;
+    }
+    .ContactUsSpanBig {
+        color:#00FFFF;
+        font-size:30px;   
+    }
+    .ContactUsPara {
+        font-size: 30px;
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+    
+}
+
+
+/* CONTACT */
+
+/* GOOGLE MAPS */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .MapsMoveLeft {
+     left:33%;
+     margin-top:-120px;
+    }
+    .GoogleMaps {
+        left:11%;
+        margin-top:80px;
+        height:400px;
+        width:500px;
+    }
+    .mapouter {
+        width:400px;
+        height:500px;
+    }
+    .gmap_canvas {
+        width:400px;
+        height:500px;
+    }
+}
+
+
+/* GOOGLE MAPS */
+
+/* Footer */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .FooterNavi {
+        margin-left:65px;
+    }
+    .FooterMedia {
+        Float:left;
+        margin-left:50px;
+        margin-top:25px;
+    }
+    
+    .Adress {
+        Float:left;
+        margin-left:50px;
+        margin-top:25px;
+        text-align: left;
+    }
+    
+    .TaKontakt {
+        Float:left;
+        margin-left:50px;
+        margin-top:25px;
+        text-align: left;
+    }
+    
+
+}
+
+
+/* 768+ Respo768 ENDS */
+
+/* 425+ respo425 Begins */
+
+
+/* header/ big pic */
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+    .flow {
+        top:200px;
+    }
+    p.megatext {
+      font-size:40px;
+      height:50px;
+    }
+    p.minitext {
+        font-size:17px;
+    }
+    .one {
+        margin-left:10px;
+    }
+    .fa-circle {
+        font-size:10px;
+        margin-right:5px;
+    }
+   #Home {
+    height:450px !important;
+
+    
+   }
+   img.wide {
+    height:450px;
+    
+   }
+  }
+  
+
+  @media only screen and (min-width: 425px) and (max-width: 767px) {
+    img.buttonImg {
+        left: 35%;
+    transform: translate(-50%, 0%);
+        height:45px;
+        width: 200px;
+        top:250px;
+    }
+    img.buttonMoreImg {
+        left: 70%;
+    transform: translate(-30%, 0%);
+        height:45px;
+        top:250px;
+    }
+  }
+
+/* header/ big pic */
+/* With flow */
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+    .FirstPara {
+        padding-top:35px;
+    }
+
+
+}
+/* With flow */
+/* staff pictures */
+  @media only screen and (min-width: 425px) and (max-width: 767px) {
+    .staffnew {
+        margin-left:0%;
+    }
+    .staffrow {
+        width:100%
+    }
+    .ProductHeader {
+       margin-top: 100px;
+    }
+    .IconLeft {
+        margin-left:50px;
+    }
+  }
+
+/* staff pictures */
+
+/* PRODUCT PICTURES */
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+.ProductImgLeft {
+    margin-left:0px;
+    margin-top:25px;
+}
+.ProductImgDownTwo {
+    margin-top:50px;
+}
+.ImgGigaLeft {
+    margin-left:0%;
+}
+}
+
+/* PRODUCT PICTURES */
+
+
+/* price list */
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+    .BIGPRICEHEADER {
+        margin-left:3%;
+    }
+    .PaketCenter {
+        margin-left:3%;
+    }
+    .BigPriceSecondHeader {
+        margin-left:3%;
+    }
+    .fakturacenter {
+        margin-left:3%;
+        font-size:14px;
+    }
+    .priceright {
+        margin-left:115px;
+        
+    }
+    .pricerightt {
+        margin-left:50px;
+        
+    }
+    .PriceFirstHeaderSpan {
+        float:left;
+        margin-left:10px;
+    }
+  }
+
+  /* price list */
+
+/* CONTACT */
+
+  @media only screen and (min-width: 425px) and (max-width: 767px) {
+    .ContactUsHeader {
+        left: 50%;
+    transform: translate(-50%, -50%);
+    top: 40px;
+    font-size:30px;
+    }
+    .ContactUsSpanBig {
+        color:#00FFFF;
+        font-size:30px;   
+    }
+    .ContactUsPara {
+        font-size: 30px;
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+    
+}
+
+
+/* CONTACT */
+
+/* GOOGLE MAPS */
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+    .MapsMoveLeft {
+     left:14%;
+     margin-top:-120px;
+    }
+    .GoogleMaps {
+        
+        display:none;
+    }
+   
+}
+/* GOOGLE MAPS */
+
+/* Footer */
+
+@media only screen and (min-width: 425px) and (max-width: 767px) {
+    .FooterNavi {
+        margin-left:20px;
+    }
+    .FooterMedia {
+        Float:left;
+        margin-left:50px;
+        margin-top:25px;
+    }
+    
+    .Adress {
+        Float:left;
+        margin-left:25px;
+        margin-top:25px;
+        text-align: left;
+    }
+    
+    .TaKontakt {
+        Float:left;
+        margin-left:25px;
+        margin-top:25px;
+        text-align: left;
+    }
+    
+
+}
+
+
+/* 425+ Respo425 ENDS */
+
+/* 375+ respo375 Begins */
+
+
+/* header/ big pic */
+@media only screen and (min-width: 360px) and (max-width: 424px) {
+    .flow {
+        top:200px;
+    }
+    p.megatext {
+      font-size:30px;
+      height:40px;
+    }
+    p.minitext {
+        font-size:15px;
+    }
+    .one {
+        margin-left:0px;
+    }
+    .fa-circle {
+        font-size:10px;
+        margin-right:0px;
+    }
+   #Home {
+    height:450px !important;
+
+    
+   }
+   img.wide {
+    height:450px;
+    
+   }
+  }
+
+
+  @media only screen and (min-width: 360px) and (max-width: 424px) {
+    img.buttonImg {
+        left: 35%;
+    transform: translate(-50%, 0%);
+        height:40px;
+        width: 180px;
+        top:250px;
+    }
+    img.buttonMoreImg {
+        left: 75%;
+    transform: translate(-45%, 0%);
+        height:40px;
+        top:250px;
+    }
+  }
+
+/* header/ big pic */
+/* With flow */
+@media only screen and (min-width: 360px) and (max-width: 424px) {
+    .FirstPara {
+        padding-top:35px;
+    }
+
+
+}
+/* With flow */
+/* staff pictures */
+  @media only screen and (min-width: 360px) and (max-width: 424px) {
+    .staffnew {
+        margin-left:0%;
+    }
+    .staffrow {
+        width:100%
+    }
+    .ProductHeader {
+       margin-top: 100px;
+    }
+    .IconLeft {
+        margin-left:50px;
+    }
+  }
+
+/* staff pictures */
+
+/* PRODUCT PICTURES */
+@media only screen and (min-width: 360px) and (max-width: 424px) {
+.ProductImgLeft {
+    margin-left:0px;
+    margin-top:25px;
+}
+.ProductImgDownTwo {
+    margin-top:50px;
+}
+.ImgGigaLeft {
+    margin-left:0%;
+}
+}
+
+/* PRODUCT PICTURES */
+
+
+/* price list */
+
+@media only screen and (min-width: 360px) and (max-width: 424px) {
+    .BIGPRICEHEADER {
+        margin-left:7%;
+    }
+    .PaketCenter {
+        margin-left:7%;
+    }
+    .BigPriceSecondHeader {
+        margin-left:7%;
+    }
+    .fakturacenter {
+        margin-left:7%;
+        font-size:14px;
+    }
+    .priceright {
+        margin-left:75px;
+        
+    }
+    .pricerightt {
+        margin-left:20px;
+        
+    }
+    .PriceFirstHeaderSpan {
+        float:left;
+        margin-left:0px;
+    }
+    .ProductFontSize {
+        font-size:13px;
+    }
+    .PriceSecondtest {
+        font-size:12px;
+       
+    }
+    .PriceSecond {
+        font-size:12px;
+        
+    }
+  }
+
+  /* price list */
+
+/* CONTACT */
+
+  @media only screen and(min-width: 360px) and (max-width: 424px) {
+    .ContactUsHeader {
+        left: 50%;
+    transform: translate(-50%, -50%);
+    top: 40px;
+    font-size:30px;
+    }
+    .ContactUsSpanBig {
+        color:#00FFFF;
+        font-size:30px;   
+    }
+    .ContactUsPara {
+        font-size: 30px;
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+    
+}
+
+
+/* CONTACT */
+
+/* GOOGLE MAPS */
+
+@media only screen and (min-width: 360px) and (max-width: 424px) {
+    .MapsMoveLeft {
+     left:10%;
+     margin-top:-120px;
+    }
+    .GoogleMaps {
+        
+        display:none;
+    }
+   
+}
+/* GOOGLE MAPS */
+
+/* Footer */
+
+@media only screen and (min-width: 360px) and (max-width: 424px) {
+    .FooterNavi {
+        margin-left:0px;
+        font-size:12px;
+    }
+    .FooterMedia {
+        Float:left;
+        margin-left:35px;
+        
+        font-size:12px;
+    }
+    
+    .Adress {
+        Float:left;
+        margin-left:25px;
+       
+        text-align: left;
+        font-size:12px;
+    }
+    
+    .TaKontakt {
+        Float:left;
+        margin-left:10px;
+        
+        text-align: left;
+        font-size:12px;
+    }
+    
+
+}
+
+
+
+
+
+/* 425+ Respo425 ENDS */
+
+/* 325+ respo325 Begins */
+
+
+
+/* header/ big pic */
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+    .flow {
+        top:200px;
+    }
+    p.megatext {
+      font-size:30px;
+      height:40px;
+    }
+    p.minitext {
+        font-size:15px;
+    }
+    .one {
+        margin-left:0px;
+    }
+    .fa-circle {
+        font-size:10px;
+        margin-right:0px;
+    }
+   #Home {
+    height:450px !important;
+
+    
+   }
+   img.wide {
+    height:450px;
+    
+   }
+  }
+
+
+  @media only screen and (min-width: 320px) and (max-width: 359px) {
+    img.buttonImg {
+        left: 1%;
+    transform: translate(-0%, 0%);
+        height:40px;
+        width: 180px;
+        top:250px;
+    }
+    img.buttonMoreImg {
+        left: 59%;
+    transform: translate(-0%, 0%);
+        height:40px;
+        top:250px;
+    }
+  }
+
+/* header/ big pic */
+/* With flow */
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+    .FirstPara {
+        padding-top:35px;
+    }
+
+
+}
+/* With flow */
+/* staff pictures */
+  @media only screen and (min-width: 320px) and (max-width: 359px) {
+    .staffnew {
+        margin-left:0%;
+    }
+    .staffrow {
+        width:100%
+    }
+    .ProductHeader {
+       margin-top: 100px;
+    }
+    .IconLeft {
+        margin-left:50px;
+    }
+  }
+
+/* staff pictures */
+
+/* PRODUCT PICTURES */
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+.ProductImgLeft {
+    margin-left:0px;
+    margin-top:25px;
+}
+.ProductImgDownTwo {
+    margin-top:50px;
+}
+.ImgGigaLeft {
+    margin-left:0%;
+}
+}
+
+/* PRODUCT PICTURES */
+
+
+/* price list */
+
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+    .BIGPRICEHEADER {
+        margin-left:0%;
+    }
+    .PaketCenter {
+        margin-left:0%;
+    }
+    .BigPriceSecondHeader {
+        margin-left:0%;
+    }
+    .fakturacenter {
+        margin-left:0%;
+        font-size:14px;
+    }
+    .priceright {
+        margin-left:75px;
+        
+    }
+    .pricerightt {
+        margin-left:20px;
+        
+    }
+    .PriceFirstHeaderSpan {
+        float:left;
+        margin-left:0px;
+    }
+    .ProductFontSize {
+        font-size:13px;
+    }
+    .PriceSecondtest {
+        font-size:12px;
+       
+    }
+    .PriceSecond {
+        font-size:12px;
+        
+    }
+  }
+
+  /* price list */
+
+/* CONTACT */
+
+  @media only screen and (min-width: 320px) and (max-width: 359px) {
+    .ContactUsHeader {
+        left: 50%;
+    transform: translate(-50%, -50%);
+    top: 40px;
+    font-size:30px;
+    }
+    .ContactUsSpanBig {
+        color:#00FFFF;
+        font-size:30px;   
+    }
+    .ContactUsPara {
+        font-size: 30px;
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+    
+}
+
+
+/* CONTACT */
+
+/* GOOGLE MAPS */
+
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+    .MapsMoveLeft {
+     left:2%;
+     margin-top:-120px;
+    }
+    .GoogleMaps {
+        
+        display:none;
+    }
+   
+}
+/* GOOGLE MAPS */
+
+/* Footer */
+
+@media only screen and (min-width: 320px) and (max-width: 359px) {
+    .FooterNavi {
+        margin-left:0px;
+        font-size:12px;
+    }
+    .FooterMedia {
+        Float:left;
+        margin-left:35px;
+        
+        font-size:12px;
+    }
+    
+    .Adress {
+        Float:left;
+        margin-left:0px;
+       
+        text-align: left;
+        font-size:12px;
+    }
+    
+    .TaKontakt {
+        Float:left;
+        margin-left:10px;
+        
+        text-align: left;
+        font-size:12px;
+    }
+    
+
+}
+
+
+/* header/ big pic */
+@media only screen and (min-width: 1px) and (max-width: 319px) {
+    .flow {
+        top:200px;
+    }
+    p.megatext {
+      font-size:30px;
+      height:40px;
+    }
+    p.minitext {
+        font-size:15px;
+    }
+    .one {
+        margin-left:0px;
+    }
+    .fa-circle {
+        font-size:10px;
+        margin-right:0px;
+    }
+   #Home {
+    height:450px !important;
+
+    
+   }
+   img.wide {
+    height:450px;
+    
+   }
+  }
+
+
+  @media only screen and (min-width: 1px) and (max-width: 319px) {
+    img.buttonImg {
+        left: 1%;
+    transform: translate(-0%, 0%);
+        height:40px;
+        width: 180px;
+        top:250px;
+    }
+    img.buttonMoreImg {
+        left: 59%;
+    transform: translate(-0%, 0%);
+        height:40px;
+        top:250px;
+    }
+  }
+
+/* header/ big pic */
+/* With flow */
+@media only screen and (min-width: 1px) and (max-width: 319px) {
+    .FirstPara {
+        padding-top:35px;
+    }
+
+
+}
+/* With flow */
+/* staff pictures */
+  @media only screen and (min-width: 1px) and (max-width: 319px) {
+    .staffnew {
+        margin-left:0%;
+    }
+    .staffrow {
+        width:100%
+    }
+    .ProductHeader {
+       margin-top: 100px;
+    }
+    .IconLeft {
+        margin-left:50px;
+    }
+  }
+
+/* staff pictures */
+
+/* PRODUCT PICTURES */
+@media only screen and (min-width: 1px) and (max-width: 319px) {
+.ProductImgLeft {
+    margin-left:0px;
+    margin-top:25px;
+}
+.ProductImgDownTwo {
+    margin-top:50px;
+}
+.ImgGigaLeft {
+    margin-left:0%;
+}
+}
+
+/* PRODUCT PICTURES */
+
+
+/* price list */
+
+@media only screen and (min-width: 1px) and (max-width: 319px) {
+    .BIGPRICEHEADER {
+        margin-left:0%;
+    }
+    .PaketCenter {
+        margin-left:0%;
+    }
+    .BigPriceSecondHeader {
+        margin-left:0%;
+    }
+    .fakturacenter {
+        margin-left:0%;
+        font-size:14px;
+    }
+    .priceright {
+        margin-left:75px;
+        
+    }
+    .pricerightt {
+        margin-left:20px;
+        
+    }
+    .PriceFirstHeaderSpan {
+        float:left;
+        margin-left:0px;
+    }
+    .ProductFontSize {
+        font-size:13px;
+    }
+    .PriceSecondtest {
+        font-size:12px;
+       
+    }
+    .PriceSecond {
+        font-size:12px;
+        
+    }
+  }
+
+  /* price list */
+
+/* CONTACT */
+
+  @media only screen and (min-width: 1px) and (max-width: 319px) {
+    .ContactUsHeader {
+        left: 50%;
+    transform: translate(-50%, -50%);
+    top: 40px;
+    font-size:30px;
+    }
+    .ContactUsSpanBig {
+        color:#00FFFF;
+        font-size:30px;   
+    }
+    .ContactUsPara {
+        font-size: 30px;
+        position: absolute;
+        top: 200px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
+    
+}
+
+
+/* CONTACT */
+
+/* GOOGLE MAPS */
+
+@media only screen and (min-width: 1px) and (max-width: 319px) {
+    .MapsMoveLeft {
+     left:2%;
+     margin-top:-120px;
+    }
+    .GoogleMaps {
+        
+        display:none;
+    }
+   
+}
+/* GOOGLE MAPS */
+
+/* Footer */
+
+@media only screen and (min-width: 1px) and (max-width: 319px) {
+    .FooterNavi {
+        margin-left:0px;
+        font-size:12px;
+    }
+    .FooterMedia {
+        Float:left;
+        margin-left:35px;
+        
+        font-size:12px;
+    }
+    
+    .Adress {
+        Float:left;
+        margin-left:0px;
+       
+        text-align: left;
+        font-size:12px;
+    }
+    
+    .TaKontakt {
+        Float:left;
+        margin-left:10px;
+        
+        text-align: left;
+        font-size:12px;
+    }
+    
+
+}
