@@ -3,12 +3,13 @@ var router = express.Router();
 var mkdirp = require('mkdirp');
 var fs = require('fs-extra');
 var resizeImg = require('resize-img');
-
+var auth = require('../config/auth');
+var isAdmin = auth.isAdmin;
 
 var Staff = require('../models/staff');
 
 
-router.get('/',  function (req, res) {
+router.get('/', isAdmin, function (req, res) {
    
 
     Staff.find(function (err, staffs) {
@@ -25,7 +26,7 @@ router.get('/',  function (req, res) {
  * GET add staff
  */
 
-router.get('/add-staff',  function (req, res) {
+router.get('/add-staff', isAdmin, function (req, res) {
 
     var title = "";
     var slug = "";
@@ -51,7 +52,7 @@ router.get('/add-staff',  function (req, res) {
 /*
  * POST add Staff
  */
-router.post('/add-staff', function (req, res) {
+router.post('/add-staff',  function (req, res) {
     var imageFile = typeof req.files.image !== "undefined" ? req.files.image.name : "";
     
 
@@ -146,7 +147,7 @@ router.post('/add-staff', function (req, res) {
 /*
  * GET edit staff
  */
-router.get('/edit-staff/:id',  function (req, res) {
+router.get('/edit-staff/:id', isAdmin,  function (req, res) {
 
     var errors;
 
@@ -271,7 +272,7 @@ router.post('/edit-staff/:id', function (req, res) {
 
 
 
-    router.get('/delete-image/:image',  function (req, res) {
+    router.get('/delete-image/:image', isAdmin, function (req, res) {
 
         var originalImage = 'public/staff_images/' + req.query.id;
         var thumbImage = 'public/staff_images/' + req.query.id;
@@ -295,7 +296,7 @@ router.post('/edit-staff/:id', function (req, res) {
     /*
      * GET delete staff
      */
-    router.get('/delete-staff/:id', function (req, res) {
+    router.get('/delete-staff/:id', isAdmin, function (req, res) {
     
         var id = req.params.id;
         var path = 'public/staff_images/' + id;

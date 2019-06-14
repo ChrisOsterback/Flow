@@ -2,7 +2,8 @@ var express = require('express');
 var router = express.Router();
 var mkdirp = require('mkdirp');
 var fs = require('fs-extra');
-
+var auth = require('../config/auth');
+var isAdmin = auth.isAdmin;
 
     
 var Klipp = require('../models/klipp.js');
@@ -10,7 +11,7 @@ var Price = require('../models/price');
 var Hair = require('../models/hair');
 var Make = require('../models/make');
 
-router.get('/',  function (req, res) {
+router.get('/', isAdmin, function (req, res) {
 
 
    
@@ -38,7 +39,7 @@ router.get('/',  function (req, res) {
  * GET add price
  */
 
-router.get('/add-price',  function (req, res) {
+router.get('/add-price',isAdmin,  function (req, res) {
 
     var first = "";
     var slug = "";
@@ -146,7 +147,7 @@ router.post('/add-price', function (req, res) {
 /*
  * GET edit price
  */
-router.get('/edit-price/:id',  function (req, res) {
+router.get('/edit-price/:id',isAdmin,  function (req, res) {
 
     var errors;
 
@@ -258,7 +259,7 @@ router.post('/edit-price/:id', function (req, res) {
     /*
      * GET delete price
      */
-    router.get('/delete-price/:id', function (req, res) {
+    router.get('/delete-price/:id',isAdmin, function (req, res) {
     
         var id = req.params.id;
         var path = 'public/content/' + id;
@@ -290,7 +291,7 @@ router.post('/edit-price/:id', function (req, res) {
      * GET add Klipp
      */
     
-    router.get('/add-klipp',  function (req, res) {
+    router.get('/add-klipp',isAdmin,  function (req, res) {
     
         var first = "";
         var slug = "";
@@ -404,7 +405,7 @@ router.post('/edit-price/:id', function (req, res) {
     /*
      * GET edit price
      */
-    router.get('/edit-klipp/:id',  function (req, res) {
+    router.get('/edit-klipp/:id', isAdmin, function (req, res) {
     
         var errors;
     
@@ -521,7 +522,7 @@ router.post('/edit-price/:id', function (req, res) {
         /*
          * GET delete price
          */
-        router.get('/delete-klipp/:id', function (req, res) {
+        router.get('/delete-klipp/:id', isAdmin,function (req, res) {
         
             var id = req.params.id;
             var path = 'public/content/' + id;
@@ -548,7 +549,7 @@ router.post('/edit-price/:id', function (req, res) {
     
     
     /* GEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEET KLIPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP FUCKING HAIR STYLE */
-    router.get('/add-hair',  function (req, res) {
+    router.get('/add-hair', isAdmin, function (req, res) {
     
         var first = "";
         var slug = "";
@@ -662,7 +663,7 @@ router.post('/edit-price/:id', function (req, res) {
     /*
      * GET edit price
      */
-    router.get('/edit-hair/:id',  function (req, res) {
+    router.get('/edit-hair/:id',isAdmin,  function (req, res) {
     
         var errors;
     
@@ -779,7 +780,7 @@ router.post('/edit-price/:id', function (req, res) {
         /*
          * GET delete price
          */
-        router.get('/delete-hair/:id', function (req, res) {
+        router.get('/delete-hair/:id',isAdmin, function (req, res) {
         
             var id = req.params.id;
             var path = 'public/content/' + id;
@@ -810,7 +811,7 @@ router.post('/edit-price/:id', function (req, res) {
 /* GEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEET KLIPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP HAIR ENDS *//* GEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEET KLIPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP HAIR ENDS */
   /* GEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEET KLIPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP FUCKING MAKEUP *//* GEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEET KLIPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP HAIR ENDS */
   
-  router.get('/add-make',  function (req, res) {
+  router.get('/add-make', isAdmin, function (req, res) {
     
     var first = "";
     var slug = "";
@@ -924,7 +925,7 @@ router.post('/add-make', function (req, res) {
 /*
  * GET edit price
  */
-router.get('/edit-make/:id',  function (req, res) {
+router.get('/edit-make/:id', isAdmin, function (req, res) {
 
     var errors;
 
@@ -1041,7 +1042,7 @@ router.post('/edit-make/:id', function (req, res) {
     /*
      * GET delete price
      */
-    router.get('/delete-make/:id', function (req, res) {
+    router.get('/delete-make/:id',isAdmin, function (req, res) {
     
         var id = req.params.id;
         var path = 'public/content/' + id;

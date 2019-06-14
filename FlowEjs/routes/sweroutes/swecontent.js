@@ -2,7 +2,8 @@ var express = require('express');
 var router = express.Router();
 var mkdirp = require('mkdirp');
 var fs = require('fs-extra');
-
+var auth = require('../../config/auth');
+var isAdmin = auth.isAdmin;
 
     
 var Sweklipp = require('../../models/swemodels/sweklipp');
@@ -10,7 +11,7 @@ var Sweprice = require('../../models/swemodels/sweprice');
 var Swehair = require('../../models/swemodels/swehair');
 var Swemake = require('../../models/swemodels/swemake');
 
-router.get('/',  function (req, res) {
+router.get('/', isAdmin, function (req, res) {
 
 
    
@@ -38,7 +39,7 @@ router.get('/',  function (req, res) {
  * GET add price
  */
 
-            router.get('/add-sweprice',  function (req, res) {
+            router.get('/add-sweprice', isAdmin, function (req, res) {
 
                 var first = "";
                 var slug = "";
@@ -146,7 +147,7 @@ router.post('/add-sweprice', function (req, res) {
 /*
  * GET edit price
  */
-router.get('/edit-sweprice/:id',  function (req, res) {
+router.get('/edit-sweprice/:id', isAdmin, function (req, res) {
 
     var errors;
 
@@ -257,7 +258,7 @@ router.post('/edit-sweprice/:id', function (req, res) {
     /*
      * GET delete price
      */
-    router.get('/delete-sweprice/:id', function (req, res) {
+    router.get('/delete-sweprice/:id', isAdmin,function (req, res) {
     
         var id = req.params.id;
         var path = 'public/swecontent/' + id;
@@ -289,7 +290,7 @@ router.post('/edit-sweprice/:id', function (req, res) {
      * GET add Klipp
      */
     
-    router.get('/add-sweklipp',  function (req, res) {
+    router.get('/add-sweklipp', isAdmin, function (req, res) {
     
         var first = "";
         var slug = "";
@@ -403,7 +404,7 @@ router.post('/edit-sweprice/:id', function (req, res) {
     /*
      * GET edit price
      */
-    router.get('/edit-sweklipp/:id',  function (req, res) {
+    router.get('/edit-sweklipp/:id',isAdmin,  function (req, res) {
     
         var errors;
     
@@ -520,7 +521,7 @@ router.post('/edit-sweprice/:id', function (req, res) {
         /*
          * GET delete price
          */
-        router.get('/delete-sweklipp/:id', function (req, res) {
+        router.get('/delete-sweklipp/:id',isAdmin, function (req, res) {
         
             var id = req.params.id;
             var path = 'public/swecontent/' + id;
@@ -547,7 +548,7 @@ router.post('/edit-sweprice/:id', function (req, res) {
     
     
     /* GEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEET KLIPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP FUCKING HAIR STYLE */
-    router.get('/add-swehair',  function (req, res) {
+    router.get('/add-swehair', isAdmin, function (req, res) {
     
         var first = "";
         var slug = "";
@@ -661,7 +662,7 @@ router.post('/edit-sweprice/:id', function (req, res) {
     /*
      * GET edit price
      */
-    router.get('/edit-swehair/:id',  function (req, res) {
+    router.get('/edit-swehair/:id',isAdmin, function (req, res) {
     
         var errors;
     
@@ -778,7 +779,7 @@ router.post('/edit-sweprice/:id', function (req, res) {
         /*
          * GET delete price
          */
-        router.get('/delete-swehair/:id', function (req, res) {
+        router.get('/delete-swehair/:id',isAdmin, function (req, res) {
         
             var id = req.params.id;
             var path = 'public/swecontent/' + id;
@@ -809,7 +810,7 @@ router.post('/edit-sweprice/:id', function (req, res) {
 /* GEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEET KLIPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP HAIR ENDS *//* GEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEET KLIPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP HAIR ENDS */
   /* GEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEET KLIPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP FUCKING MAKEUP *//* GEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEET KLIPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP HAIR ENDS */
   
-  router.get('/add-swemake',  function (req, res) {
+  router.get('/add-swemake', isAdmin, function (req, res) {
     
     var first = "";
     var slug = "";
@@ -923,7 +924,7 @@ router.post('/add-swemake', function (req, res) {
 /*
  * GET edit price
  */
-router.get('/edit-swemake/:id',  function (req, res) {
+router.get('/edit-swemake/:id', isAdmin,  function (req, res) {
 
     var errors;
 
@@ -1040,7 +1041,7 @@ router.post('/edit-swemake/:id', function (req, res) {
     /*
      * GET delete price
      */
-    router.get('/delete-swemake/:id', function (req, res) {
+    router.get('/delete-swemake/:id', isAdmin,function (req, res) {
     
         var id = req.params.id;
         var path = 'public/swecontent/' + id;

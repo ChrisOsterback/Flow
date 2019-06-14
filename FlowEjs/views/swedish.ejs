@@ -96,7 +96,7 @@
                 <div id="Products"></div>
          </div>
   
-  <!-- flow ends-->>
+  <!-- flow ends-->
 
          <div class="Productsimgs" >
           <p class="ProductHeader">PRODUKTER</p>
@@ -121,7 +121,7 @@
           </div>
 
           
-             <!--PRODUCT ENDS-->
+           
 
   
      
@@ -132,129 +132,53 @@
              <p class="PriceHeader" >PRISLISTA</p>
              <img src='/globalimg/Line.png'  alt="PriceLine" />
         </div>
-   
+   <br><br><br><br>
+  <div class="alignmiddle">
+ <% sweklipps.forEach(function(p){ %>
+<p class="paratest" ><span class="leftparaFirst">Klippning: </span> <span class="testleft"><%= p.first %></span></p><br> <br>
+<p class="paratest" ><span class="leftparaFirst">Färg:(extra behandling 20-50€)</span> <span class="testleft"><%= p.second %></span></p><br> <br>
+<p class="paratest" ><span class="leftparaFirst">Kulmienmuotoilu ja -väri, ripsenväri</span> <span class="testleft"><%= p.third %></span></p><br> <br>
+  <% }); %>  
+</div> 
 
-  <div class="BIGPRICEHEADER">
-  <div class="PriceFirstHeaders">
-            <div class="priceFirst">
-              <span class="ProductFontSize">Klippning:</span> 
-             <br></br> 
-              <span class="ProductFontSize">Färg:</span>  <br>
-                <span  class="product_paran">(extra behandlingar 20,00 - 50,00 €)</span>
-             <br></br>
-                    <span class="ProductFontSize">Ögonbrynsplockningar och färgning, ögonfransfärg</span>
-                
-             
-            </div>
-            </div>
-<% sweklipps.forEach(function(p){ %>
-             <div class="SwePriceFirstHeaderSpan" > 
-            <div class="PriceHeaderSpan"> 
-            
-            <span class="PriceRight"><%= p.first %></span>
-              <br></br>
-            <span class="PriceRight"><%= p.second %></span> <br>
-            <span  class="product_paran2"></span>
-            <br><br>
-              <span class="PriceRightFix"> <%= p.third %></span>
-              
-            </div>
-            </div>
-</div>
-<% }); %>  
-<!---- SECOND DIV BEGINS-->
+<br><br><br><br>
 <p class="PaketCenter">Paket</p>
 
-<div class="BigPriceSecondHeader">
-        <div class="PriceSecondHeaders">
-            <div class="PriceSecond">
-            <% sweprices.forEach(function(p){ %>
-            <br>
-            <span><%= p.first %></span>
-          
-            
-             <% }); %>  
-            </div>
-            </div>
-              
-        <div class="PriceSecondHeaders">
-            <div class="PriceSecond">
-            <% sweprices.forEach(function(p){ %>
-               
-             <br>
-      
-              <span class="priceright"><%= p.second %></span> 
-            
-             <% }); %>  
-            </div>
-            </div>
-            </div>
-
-
-
-            <!--THID DIV FUCKING BEGING, SWEET LOOORD-->
+<div class="alignmiddle">
+ <% sweprices.forEach(function(p){ %>
+<p class="paratest" ><span class="leftpara"><%= p.first %></span> <span class="testleft"><%= p.second %></span></p><br>
+  <% }); %>  
+  
+</div> 
+<br><br><br><br>
 
 <p class="PaketCenter">Uppsättning</p>
 
-<div class="BigPriceSecondHeader">
-        <div class="PriceSecondHeaders">
-            <div class="PriceSecond">
-            <% swehairs.forEach(function(p){ %>
-            <br>
-            <span><%= p.first %></span>
-          
-            
-             <% }); %>  
-            </div>
-            </div>
-              
-        <div class="PriceSecondHeaders">
-            <div class="PriceSecondtest">
-            <% swehairs.forEach(function(p){ %>
-               
-             <br>
-      
-              <span class="pricerightt"><%= p.second %></span> 
-            
-             <% }); %>  
-            </div>
-            </div>
-            </div>
 
+           
+<div class="alignmiddle">
+ <% swehairs.forEach(function(p){ %>
+<p class="paratest" ><span class="leftpara"><%= p.first %></span> <span class="testleft"><%= p.second %></span></p><br>
+  <% }); %>  
+</div> 
 
-<!----FOURT DIV BEGINGS MOAHAHHA-->
+        
+   <br><br><br>   
+
 
              
 
+
 <p class="PaketCenter">Makeup</p>
 
-<div class="BigPriceSecondHeader">
-        <div class="PriceSecondHeaders">
-            <div class="PriceSecond">
-            <% swemakes.forEach(function(p){ %>
-            <br>
-            <span><%= p.first %></span>
-          
-            
-             <% }); %>  
-            </div>
-            </div>
-           
-        <div class="PriceSecondHeaders">
-            <div class="PriceSecond">
-            <% swemakes.forEach(function(p){ %>
-               
-             <br>
-      
-              <span class="swepriceright"><%= p.second %></span> 
-            
-             <% }); %>  
-            </div>
-            </div>
-            </div>
+  <div class="alignmiddle">
+  <% swemakes.forEach(function(p){ %>
+<p class="paratest" ><span class="leftpara"><%= p.first %></span> <span class="testleft"><%= p.second %></span></p><br>
+  <% }); %>  
+</div> 
 
-<!----FOURT DIV ends MOAHAHHA-->
 
+<br><br><br><br><br><br><br><br>
 
 <div class="fakturacenter">
  <p class="faktura">
@@ -290,7 +214,7 @@
            
         <div id="Social"></div>
             </div >
-      <!--- contact ends-->>
+      <!--- contact ends-->
 
             <div class="Maps" >
            <div class="MapsMoveLeft">
@@ -308,15 +232,23 @@
             </div>
 
 
-            <div class="GoogleMaps">
+                  <div class="GoogleMaps">
             <div class="mapouter"><div class="gmap_canvas">
               <iframe title="Map" width="600" height="500" id="gmap_canvas" 
+              
             src="https://maps.google.com/maps?q=Flow%2C%20Raastuvankatu%2019%2C%2065100%20Vaasa&t=&z=13&ie=UTF8&iwloc=&output=embed" 
               frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe> 
-              </div> </div>
-              
-
+              </div> 
+              </div>
             </div>
+            <div class="GoogleMapslittle">
+            <div class="mapouter"><div class="gmap_canvas">
+              <iframe title="Map" width="300" height="300" id="gmap_canvas" 
+              
+            src="https://maps.google.com/maps?q=Flow%2C%20Raastuvankatu%2019%2C%2065100%20Vaasa&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+              frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe> 
+              </div> 
+              </div>
 
 </div>
 

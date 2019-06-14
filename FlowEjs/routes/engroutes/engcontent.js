@@ -2,7 +2,8 @@ var express = require('express');
 var router = express.Router();
 var mkdirp = require('mkdirp');
 var fs = require('fs-extra');
-
+var auth = require('../../config/auth');
+var isAdmin = auth.isAdmin;
 
     
 var Engklipp = require('../../models/engmodels/engklipp');
@@ -10,7 +11,7 @@ var Engprice = require('../../models/engmodels/engprice');
 var Enghair = require('../../models/engmodels/enghair');
 var Engmake = require('../../models/engmodels/engmake');
 
-router.get('/',  function (req, res) {
+router.get('/',isAdmin,  function (req, res) {
 
 
    
@@ -38,7 +39,7 @@ router.get('/',  function (req, res) {
  * GET add price
  */
 
-            router.get('/add-engprice',  function (req, res) {
+            router.get('/add-engprice', isAdmin, function (req, res) {
 
                 var first = "";
                 var slug = "";
@@ -146,7 +147,7 @@ router.post('/add-engprice', function (req, res) {
 /*
  * GET edit price
  */
-router.get('/edit-engprice/:id',  function (req, res) {
+router.get('/edit-engprice/:id',isAdmin,  function (req, res) {
 
     var errors;
 
@@ -257,7 +258,7 @@ router.post('/edit-engprice/:id', function (req, res) {
     /*
      * GET delete price
      */
-    router.get('/delete-engprice/:id', function (req, res) {
+    router.get('/delete-engprice/:id', isAdmin, function (req, res) {
     
         var id = req.params.id;
         var path = 'public/engcontent/' + id;
@@ -289,7 +290,7 @@ router.post('/edit-engprice/:id', function (req, res) {
      * GET add Klipp
      */
     
-    router.get('/add-engklipp',  function (req, res) {
+    router.get('/add-engklipp', isAdmin, function (req, res) {
     
         var first = "";
         var slug = "";
@@ -403,7 +404,7 @@ router.post('/edit-engprice/:id', function (req, res) {
     /*
      * GET edit price
      */
-    router.get('/edit-engklipp/:id',  function (req, res) {
+    router.get('/edit-engklipp/:id',  isAdmin, function (req, res) {
     
         var errors;
     
@@ -520,7 +521,7 @@ router.post('/edit-engprice/:id', function (req, res) {
         /*
          * GET delete price
          */
-        router.get('/delete-engklipp/:id', function (req, res) {
+        router.get('/delete-engklipp/:id',isAdmin, function (req, res) {
         
             var id = req.params.id;
             var path = 'public/engcontent/' + id;
@@ -547,7 +548,7 @@ router.post('/edit-engprice/:id', function (req, res) {
     
     
     /* GEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEET KLIPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP FUCKING HAIR STYLE */
-    router.get('/add-enghair',  function (req, res) {
+    router.get('/add-enghair', isAdmin, function (req, res) {
     
         var first = "";
         var slug = "";
@@ -661,7 +662,7 @@ router.post('/edit-engprice/:id', function (req, res) {
     /*
      * GET edit price
      */
-    router.get('/edit-enghair/:id',  function (req, res) {
+    router.get('/edit-enghair/:id',isAdmin,  function (req, res) {
     
         var errors;
     
@@ -778,7 +779,7 @@ router.post('/edit-engprice/:id', function (req, res) {
         /*
          * GET delete price
          */
-        router.get('/delete-enghair/:id', function (req, res) {
+        router.get('/delete-enghair/:id',isAdmin, function (req, res) {
         
             var id = req.params.id;
             var path = 'public/engcontent/' + id;
@@ -809,7 +810,7 @@ router.post('/edit-engprice/:id', function (req, res) {
 /* GEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEET KLIPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP HAIR ENDS *//* GEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEET KLIPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP HAIR ENDS */
   /* GEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEET KLIPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP FUCKING MAKEUP *//* GEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEET KLIPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPPP HAIR ENDS */
   
-  router.get('/add-engmake',  function (req, res) {
+  router.get('/add-engmake',isAdmin,  function (req, res) {
     
     var first = "";
     var slug = "";
@@ -923,7 +924,7 @@ router.post('/add-engmake', function (req, res) {
 /*
  * GET edit price
  */
-router.get('/edit-engmake/:id',  function (req, res) {
+router.get('/edit-engmake/:id', isAdmin, function (req, res) {
 
     var errors;
 
@@ -1040,7 +1041,7 @@ router.post('/edit-engmake/:id', function (req, res) {
     /*
      * GET delete price
      */
-    router.get('/delete-engmake/:id', function (req, res) {
+    router.get('/delete-engmake/:id',isAdmin, function (req, res) {
     
         var id = req.params.id;
         var path = 'public/engcontent/' + id;

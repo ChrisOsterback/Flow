@@ -100,8 +100,6 @@ app.get('*', function(req,res,next) {
 
 var index = require('./routes/index.js');
 var users = require('./routes/users.js');
-
-
 var adminContent = require('./routes/staffcontent.js')
 var PriceContent = require('./routes/pricecontent.js')
 var SweContent = require('./routes/sweroutes/swecontent.js')
@@ -119,9 +117,6 @@ app.use('/engadmin/engprice', EngContent);
 app.use('/sweadmin/sweprice', SweContent);
 app.use('/swedish', Swedish);
 app.use('/english', English);
-
-
-
 app.use('/', index);
 
 

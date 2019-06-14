@@ -98,7 +98,7 @@
                 <div id="Products"></div>
          </div>
   
-  <!-- flow ends-->>
+  <!-- flow ends-->
 
          <div class="Productsimgs" >
           <p class="ProductHeader">PRODUCTS</p>
@@ -136,128 +136,60 @@
         </div>
    
 
-  <div class="BIGPRICEHEADER">
-  <div class="PriceFirstHeaders">
-            <div class="priceFirst">
-              <span class="ProductFontSize">Haircut:</span> 
-             <br></br> 
-              <span class="ProductFontSize">Color:</span>  <br>
-                <span  class="product_paran">(extra treatments 20,00 - 50,00 €)</span>
-             <br></br>
-                    <span class="ProductFontSize">Eyebrowplucking and coloring, eyelashcoloring</span>
-                
-             
-            </div>
-            </div>
-<% engklipps.forEach(function(p){ %>
-             <div class="EngPriceFirstHeaderSpan" > 
-            <div class="PriceHeaderSpan"> 
-            
-            <span class="PriceRight"><%= p.first %></span>
-              <br></br>
-            <span class="PriceRight"><%= p.second %></span> <br>
-            <span  class="product_paran2"></span>
-            <br><br>
-              <span class="PriceRightFix"> <%= p.third %></span>
-              
-            </div>
-            </div>
-</div>
-<% }); %>  
-<!---- SECOND DIV BEGINS-->
+    <br><br><br><br>
+  <div class="alignmiddle">
+ <% engklipps.forEach(function(p){ %>
+<p class="paratest" ><span class="leftparaFirst">Haircut:  </span> <span class="testleft"><%= p.first %></span></p><br> <br>
+<p class="paratest" ><span class="leftparaFirst">Color: (extra treatments 20-50 €)  </span> <span class="testleft"><%= p.second %></span></p><br> <br>
+<p class="paratest" ><span class="leftparaFirst">Eyebrowplucking and coloring, eyelashcoloring</span> <span class="testleft"><%= p.third %></span></p><br> <br>
+  <% }); %>  
+</div> 
+
+<br><br><br><br>
 <p class="PaketCenter">Packages</p>
 
-<div class="BigPriceSecondHeader">
-        <div class="PriceSecondHeaders">
-            <div class="PriceSecond">
-            <% engprices.forEach(function(p){ %>
-            <br>
-            <span><%= p.first %></span>
-          
-            
-             <% }); %>  
-            </div>
-            </div>
-              
-        <div class="PriceSecondHeaders">
-            <div class="PriceSecond">
-            <% engprices.forEach(function(p){ %>
-               
-             <br>
-      
-              <span class="priceright"><%= p.second %></span> 
-            
-             <% }); %>  
-            </div>
-            </div>
-            </div>
-            
+<div class="alignmiddle">
+ <% engprices.forEach(function(p){ %>
+<p class="paratest" ><span class="leftpara"><%= p.first %></span> <span class="testleft"><%= p.second %></span></p><br>
+  <% }); %>  
+  
+</div> 
+<br><br><br><br>
+
+<p class="PaketCenter">Hairstyle</p>
 
 
-            <!--THID DIV FUCKING BEGING, SWEET LOOORD-->
-            <div>
-<div class="PaketCenter">
-<p>Hairstyle</p>
-</div>
-</div>
-<div class="BigPriceSecondHeader">
-        <div class="PriceSecondHeaders">
-            <div class="PriceSecond">
-            <% enghairs.forEach(function(p){ %>
-            <br>
-            <span><%= p.first %></span>
-          
-            
-             <% }); %>  
-            </div>
-            </div>
-              
-        <div class="PriceSecondHeaders">
-            <div class="PriceSecondtest">
-            <% enghairs.forEach(function(p){ %>
-               
-             <br>
-      
-              <span class="engpriceright"><%= p.second %></span> 
-            
-             <% }); %>  
-            </div>
-            </div>
-            </div>
+           
+<div class="alignmiddle">
+ <% enghairs.forEach(function(p){ %>
+<p class="paratest" ><span class="leftpara"><%= p.first %></span> <span class="testleft"><%= p.second %></span></p><br>
+  <% }); %>  
+</div> 
 
+        
+   <br><br><br>   
 
-<!----FOURT DIV BEGINGS MOAHAHHA-->
 
              
+
 
 <p class="PaketCenter">Makeup</p>
 
-<div class="BigPriceSecondHeader">
-        <div class="PriceSecondHeaders">
-            <div class="PriceSecond">
-            <% engmakes.forEach(function(p){ %>
-            <br>
-            <span><%= p.first %></span>
-          
-            
-             <% }); %>  
-            </div>
-            </div>
-           
-        <div class="PriceSecondHeaders">
-            <div class="PriceSecond">
-            <% engmakes.forEach(function(p){ %>
-               
-             <br>
-      
-              <span class="engpricerightmakeup"><%= p.second %></span> 
-            
-             <% }); %>  
-            </div>
-            </div>
-            </div>
+  <div class="alignmiddle">
+  <% engmakes.forEach(function(p){ %>
+<p class="paratest" ><span class="leftpara"><%= p.first %></span> <span class="testleft"><%= p.second %></span></p><br>
+  <% }); %>  
+</div> 
 
-<!----FOURT DIV ends MOAHAHHA-->
+
+<br><br><br><br><br><br><br><br>
+
+
+           
+
+
+
+    
 
 
 <div class="fakturacenter">
@@ -295,7 +227,7 @@
            
         <div id="Social"></div>
             </div >
-      <!--- contact ends-->>
+      <!--- contact ends-->
 
             <div class="Maps" >
            <div class="MapsMoveLeft">
@@ -313,15 +245,23 @@
             </div>
 
 
-            <div class="GoogleMaps">
+                  <div class="GoogleMaps">
             <div class="mapouter"><div class="gmap_canvas">
               <iframe title="Map" width="600" height="500" id="gmap_canvas" 
+              
             src="https://maps.google.com/maps?q=Flow%2C%20Raastuvankatu%2019%2C%2065100%20Vaasa&t=&z=13&ie=UTF8&iwloc=&output=embed" 
               frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe> 
-              </div> </div>
-              
-
+              </div> 
+              </div>
             </div>
+            <div class="GoogleMapslittle">
+            <div class="mapouter"><div class="gmap_canvas">
+              <iframe title="Map" width="300" height="300" id="gmap_canvas" 
+              
+            src="https://maps.google.com/maps?q=Flow%2C%20Raastuvankatu%2019%2C%2065100%20Vaasa&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+              frameBorder="0" scrolling="no" marginHeight="0" marginWidth="0"></iframe> 
+              </div> 
+              </div>
 
 </div>
 

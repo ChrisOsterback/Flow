@@ -1,19 +1,4 @@
 
-.paratest {
-    margin:auto;
-    padding-left:36%;
-    padding-right:36%;
-}
-
-
-.leftpara {
-  float:left;
-}
-.testleft {
-    padding-left:200px;
-    float:right;
-}
-
 
 
 
@@ -163,7 +148,7 @@ ul {
 }
 
 .Languages {
-    margin-left:52px !important;
+   
     width:82px
 }
 
@@ -172,7 +157,7 @@ ul {
 }
 
 .FlowRight{
-    margin-left:25px;
+   
     width:102px;
    
 }
@@ -307,7 +292,9 @@ img.buttonMoreImgeng {
     position: absolute;
     top:450px;
     height: 90px;
-    left:1020px;
+    left: 62%;
+    width: 300px;
+    transform: translate(-45%, 0%);
 }
 
 /*-----PICTURE CONTENT ENDS----- */
