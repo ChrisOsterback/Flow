@@ -1,4 +1,51 @@
 
+.paratest {
+    margin:auto;
+    padding-left:36%;
+    padding-right:36%;
+}
+
+
+.leftpara {
+  float:left;
+}
+.testleft {
+    padding-left:200px;
+    float:right;
+}
+
+
+
+
+
+
+/* Finnish navbar Ends */
+
+
+
+@media only screen and (min-width: 1px) and (max-width: 1572px) {
+    .navbar {
+        margin-bottom: 0px !important;
+        padding-left:0% !important;
+    }
+
+  
+   
+   .navbar-brand {
+    float: left;
+    height: 60px;
+    padding-top:23px !important;
+    margin-left:0% !important;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  
+
+  
+}
+
+
+
 
   .navbar-brand {
     float: left;
@@ -12,6 +59,7 @@
 
 .navbar {
     margin-bottom: 0px !important;
+    padding-left:13%;
 }
 
 nav {
@@ -30,11 +78,7 @@ nav {
 .navbar-toggle {
     background-color:blacK !important;
 }
-.nav>li>a {
-    position: relative;
-    display:initial !important;
-    
-}
+
 
 nav ul li a {
     color:black;
@@ -76,13 +120,16 @@ ul {
     width:122px;
 }
 
-.FLanguages {
+.FLanguages img {
+   
+    width:82px;
+    height:60px;
     
-    width:82px
 }
 
 .Ftinyeight img {
     width:80px;
+    height:60px;
 }
 
 
@@ -157,7 +204,7 @@ ul {
 }
 
 .ELanguages {
-    margin-left:60px;
+    
     width:96px
 }
 
@@ -167,7 +214,7 @@ ul {
 }
 
 .EFlowRight{
-    margin-left:25px;
+    
     width:102px;
    
 }
@@ -406,44 +453,13 @@ p {
 }
 
 .GoFlowGoda {
-    padding-top:20px;
+    padding-top:5px;
 }
 
 
 /* WITHFLOW Ends--------------------------< */
 
 /* ProductPRICE BEGINS ---------------------< */
-/* makeup part */
-.pricerightt {
-    margin-left:180px;
-    
-}
-
-.engpriceright {
-    margin-left:165px;
-    
-}
-
-.engpricerightmakeup {
-    margin-left:135px;
-    
-}
-.swepriceright {
-    margin-left:172px;
-    
-}
-/* makeup part */
-.PriceSecondtest {
-    display: inline-block;
-    text-align: left; 
-}
-
-.priceright {
-    margin-left:250px;
-    
-}
-
-
 
 .Productsimgs {
     text-align: center;
@@ -484,124 +500,49 @@ p {
 .PriceHeader {
     font-size:24px;
 }
-
-.PUSHDOWNPRICE {
-margin-bottom: 150px;
-}
-
-
-
-/*---------FIRST DIV HEADER */
-.BIGPRICEHEADER {
-    text-align: center;
-    margin-bottom: 300px;
-    margin-top:100px;
-    margin-left:36%;
-    
-}
-
-.PriceFirstHeaders {
-    float:left;
-    
-}
-
-.priceFirst {
-    
-    display: inline-block;
-    text-align: left;
-    
-}
-/* first header */
-.PriceFirstHeaderSpan {
-    float:left;
-    margin-left:162px;
-}
-
-.SwePriceFirstHeaderSpan {
-    float:left;
-    margin-left:55px !important;
-}
-
-.EngPriceFirstHeaderSpan {
-    float:left;
-    margin-left:45px !important;
-}
-/* first header */
-
-.PriceHeaderSpan {
-    display: inline-block;
-    text-align: left;    
-}
-
-.PriceRightFix {
-    margin-top:-15px !important;
-    
-}
-
-.ProductFontSize {
-    font-size: 16px;
-    font-weight: bold;
-   
-}
-
-.product_paran2 {
-    font-size:17px;
-}
-
-/*---------FIRST DIV HEADER ENDS */
-
-
-/*---------SECOND DIV HEADER BEING */
 .PaketCenter {
-    margin-left:36%;
-    font-size: 16px;
+    margin:auto !important;
+    padding-left: 36% !important;
     font-weight: bold;
+    font-size:18px;
+    text-decoration: underline;
+    padding-bottom: 50px;
     
-    margin-top:50px !important;
     
 }
 
 
-.BigPriceSecondHeader {
-    text-align: center;
-    margin-bottom: 200px;
-    
-    margin-left:36%;
 
+.paratest {
+    margin:auto;
+    padding-left:36%;
+    padding-right:36%;
 }
 
-.PriceSecondHeader {
+.leftparaFirst {
+    
+    font-weight: bold;
     float:left;
-    margin-bottom: 50px;
+  }
+
+
+.leftpara {
+  float:left;
 }
-
-
-.PriceSecond {
-    display: inline-block;
-    text-align: left; 
-    
-}
-
-
-.PriceSecondHeaders {
-    float:left;
-
-}
-
-.PriceSecond {
-    display: inline-block;
-    text-align: left;  
-
+.testleft {
+    padding-left:1px;
+    float:right;
 }
 
 
 
-/*---------SECOND DIV HEADER ENDS */
+
 
 
 
 .fakturacenter {
-    margin-left:36%
+    margin:auto;
+    padding-left:36%;
 }
 
 .faktura {
@@ -667,28 +608,11 @@ color:white;
 }
 
 .MapsMoveLeft {
-    position: absolute;
-    left:550px;
-    margin-top:-50px;
-
+    text-align: center;
+    margin-top:-75px;
 }
 
-.GoogleMaps {
-    position: absolute;
-    margin-top:-50px;
-    left:900px;
-    height:500px;
-    width:600px;
-}
 
-.mapouter {
-    width:500px;
-    height:600px;
-}
-.gmap_canvas {
-    width:500px;
-    height:600px;
-}
 
 
 .MapsSocialSpread {
@@ -715,7 +639,7 @@ color:white;
 
 .Footer {
     background-color:#2D2D2D;
-    margin-top:750px;
+    margin-top:350px;
     height:300px;
     color:white;
     text-align: center;
