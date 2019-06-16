@@ -203,7 +203,7 @@
 
   @media only screen and (min-width: 1300px) and (max-width: 1600px) {
     img.buttonImg {
-        left: 40%;
+        left: 37%;
     transform: translate(-55%, 0%);
     }
     img.buttonMoreImg {
@@ -830,7 +830,7 @@ transform: translate(-55%, 0%);
 
   @media only screen and (min-width: 360px) and (max-width: 424px) {
     img.buttonImg {
-        left: 35%;
+        left: 30%;
     transform: translate(-50%, 0%);
         height:40px;
         width: 180px;
