@@ -223,12 +223,30 @@
 /* header/ big pic */
 
 /* staff pictures */
-  @media only screen and (min-width: 1300px) and (max-width: 1600px) {
+
+@media only screen and (min-width: 1601px) and (max-width: 250000px) {
     .staffnew {
         margin-left:21%;
     }
     .staffrow {
-        width:37%
+        width:38%
+    }
+  }
+
+  @media only screen and (min-width: 1400px) and (max-width: 1600px) {
+    .staffnew {
+        margin-left:21%;
+    }
+    .staffrow {
+        width:38%
+    }
+  }
+  @media only screen and (min-width: 1300px) and (max-width: 1399px) {
+    .staffnew {
+        margin-left:10%;
+    }
+    .staffrow {
+        width:45%
     }
   }
 
