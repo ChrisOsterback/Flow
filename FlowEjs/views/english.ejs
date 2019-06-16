@@ -23,7 +23,7 @@
 
     
 
-     <a href="https://slotti.fi/booking/Flow/"><img class="buttonImg" src='/engimg/engbooking.png' alt="online"/></a>
+     <a href="https://slotti.fi/booking/Flow/"><img class="buttonImgeng" src='/engimg/engbooking.png' alt="online"/></a>
 
      </div>
      <a href="#Social"><img class="buttonMoreImgeng" src='/engimg/engonline.png' alt="online"/></a>
@@ -59,7 +59,7 @@
           <p>OUR STAFF</p>
           <img src=/globalimg/Line.png alt="Line" />
 
-          <div class="staffnew">
+          <div class="staffnew"  data-aos="fade-up">
           
            <% staffs.forEach(function(p){ %>
           <div class="staffrow">
@@ -105,7 +105,7 @@
            <img src='/globalimg/Line.png' alt="Product" />
 
 
-          <div class="ProductImgDown">
+          <div class="ProductImgDown"  data-aos="fade-right">
           <img src='/globalimg/Wella.jpg'  alt="Wella" />
           <img class="ProductImgLeft" src='/globalimg/Fudge.jpg'  alt="Fudge" />
           <img class="ProductImgLeft" src='/globalimg/ProSeb.jpg'  alt="Proseb" />
@@ -113,7 +113,7 @@
 
 
           </div>
-          <div class="ProductImgDownTwo">
+          <div class="ProductImgDownTwo" data-aos="fade-left">
           <img  src='/globalimg/GHD.jpg'  alt="GHD" />
           <img class="ImgGigaLeft" src='/globalimg/Evo.jpg'  alt="Evo" />
           <div id="Prices"></div>
@@ -137,7 +137,7 @@
    
 
     <br><br><br><br>
-  <div class="alignmiddle">
+  <div class="alignmiddle" data-aos="fade-right">
  <% engklipps.forEach(function(p){ %>
 <p class="paratest" ><span class="leftparaFirst">Haircut:  </span> <span class="testleft"><%= p.first %></span></p><br> <br>
 <p class="paratest" ><span class="leftparaFirst">Color: (extra treatments 20-50 €)  </span> <span class="testleft"><%= p.second %></span></p><br> <br>
@@ -146,9 +146,9 @@
 </div> 
 
 <br><br><br><br>
-<p class="PaketCenter">Packages</p>
+<p class="PaketCenter" data-aos="fade-left">Packages</p>
 
-<div class="alignmiddle">
+<div class="alignmiddle" data-aos="fade-left">
  <% engprices.forEach(function(p){ %>
 <p class="paratest" ><span class="leftpara"><%= p.first %></span> <span class="testleft"><%= p.second %></span></p><br>
   <% }); %>  
@@ -156,11 +156,11 @@
 </div> 
 <br><br><br><br>
 
-<p class="PaketCenter">Hairstyle</p>
+<p class="PaketCenter" data-aos="fade-right">Hairstyle</p>
 
 
            
-<div class="alignmiddle">
+<div class="alignmiddle" data-aos="fade-right">
  <% enghairs.forEach(function(p){ %>
 <p class="paratest" ><span class="leftpara"><%= p.first %></span> <span class="testleft"><%= p.second %></span></p><br>
   <% }); %>  
@@ -173,9 +173,9 @@
              
 
 
-<p class="PaketCenter">Makeup</p>
+<p class="PaketCenter" data-aos="fade-left">Makeup</p>
 
-  <div class="alignmiddle">
+  <div class="alignmiddle" data-aos="fade-left">
   <% engmakes.forEach(function(p){ %>
 <p class="paratest" ><span class="leftpara"><%= p.first %></span> <span class="testleft"><%= p.second %></span></p><br>
   <% }); %>  

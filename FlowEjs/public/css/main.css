@@ -205,7 +205,11 @@ ul {
 }
 /* English navbar ENDS*/
 
-
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    height:auto!important;
+}
 
 
 /* HEADER--------------------------- ENDS */
@@ -226,7 +230,13 @@ img.wide {
     
 }
 
-
+#mainpicture {
+    background-image: url("background.jpg");
+    background-size: cover;
+    height:880px;
+    background-repeat: no-repeat;
+    
+}
 
 
 .flow {
@@ -285,6 +295,16 @@ img.buttonMoreImg {
     height: 90px;
     left: 62%;
     transform: translate(-45%, 0%);
+    
+}
+
+img.buttonImgeng {
+    height:90px;
+    width:436px;
+    position: absolute;
+    left: 41%;
+    transform: translate(-55%, 0%);
+    top:450px;
     
 }
 

@@ -3,7 +3,9 @@
 
 
 <div id="Home" >
-<img class="wide" src='/sweimg/background.jpg' alt="background"/>
+<div id="mainpicture">
+
+
 <div class="flow">
  <p class="megatext">F &nbsp; L  &nbsp; O  &nbsp; W</p>
 
@@ -14,32 +16,28 @@
          <span class="one"><i class="fas fa-circle"></i>Shop</span></p>
 
          </div>
- 
-
-
  </div>
  
- <div>
+ </div>
+ <div >
+     <a  href="https://slotti.fi/booking/Flow/"><img class="buttonImg" src='/finimg/Fonline.png' alt="online"/></a>
+     </div>
 
-    
-
-     <a href="https://slotti.fi/booking/Flow/"><img class="buttonImg" src='/finimg/Fonline.png' alt="online"/></a>
+     <div >
+     <a  href="#Social"><img class="buttonMoreImg" src='/finimg/sociala.png' alt="online"/></a>
+      
 
      </div>
-     <a href="#Social"><img class="buttonMoreImg" src='/finimg/sociala.png' alt="online"/></a>
 
-     </div>
- 
+     <div id="Welcome"></div>
 
      
 
-     
- </div>     
  
 <!--PICTURE ENDS -->
 
  </div>
- <div class="center" id="Welcome">
+ <div class="center" >
            <p class="FirstPara">TERVETULOA</p>
            <p class="FontB">FLOW</p>
            <p class="NoM">REWELL CENTER 139</p>
@@ -59,7 +57,7 @@
           <p>HENKILÖKUNTA</p>
           <img src=/globalimg/Line.png alt="Line" />
 
-          <div class="staffnew">
+          <div class="staffnew" data-aos="fade-up">
           
            <% staffs.forEach(function(p){ %>
           <div class="staffrow">
@@ -103,7 +101,7 @@
            <img src='/globalimg/Line.png' alt="Product" />
 
 
-          <div class="ProductImgDown">
+          <div class="ProductImgDown" data-aos="fade-right">
           <img src='/globalimg/Wella.jpg'  alt="Wella" />
           <img class="ProductImgLeft" src='/globalimg/Fudge.jpg'  alt="Fudge" />
           <img class="ProductImgLeft" src='/globalimg/ProSeb.jpg'  alt="Proseb" />
@@ -111,7 +109,7 @@
 
 
           </div>
-          <div class="ProductImgDownTwo">
+          <div class="ProductImgDownTwo" data-aos="fade-left">
           <img  src='/globalimg/GHD.jpg'  alt="GHD" />
           <img class="ImgGigaLeft" src='/globalimg/Evo.jpg'  alt="Evo" />
           <div id="Prices"></div>
@@ -137,7 +135,7 @@
 
 <br><br><br><br>
 
- <div class="alignmiddle">
+ <div class="alignmiddle" data-aos="fade-right">
  <% klipps.forEach(function(p){ %>
 <p class="paratest" ><span class="leftparaFirst">Leikkaukset: </span> <span class="testleft"><%= p.first %></span></p><br> <br>
 <p class="paratest" ><span class="leftparaFirst">Väri (extra käsittelyt 20,00 - 50,00 €)</span> <span class="testleft"><%= p.second %></span></p><br> <br>
@@ -146,9 +144,9 @@
 </div> 
 
 <br><br><br><br>
-<p class="PaketCenter">Paketit</p>
+<p data-aos="fade-left" class="PaketCenter">Paketit</p>
 
-<div class="alignmiddle">
+<div class="alignmiddle" data-aos="fade-left">
  <% prices.forEach(function(p){ %>
 <p class="paratest" ><span class="leftpara"><%= p.first %></span> <span class="testleft"><%= p.second %></span></p><br>
   <% }); %>  
@@ -160,11 +158,11 @@
 
            
 
-<p class="PaketCenter">Kampaukset</p>
+<p data-aos="fade-right" class="PaketCenter">Kampaukset</p>
 
 
            
-<div class="alignmiddle">
+<div class="alignmiddle" data-aos="fade-right">
  <% hairs.forEach(function(p){ %>
 <p class="paratest" ><span class="leftpara"><%= p.first %></span> <span class="testleft"><%= p.second %></span></p><br>
   <% }); %>  
@@ -174,10 +172,10 @@
 
    <br><br><br>          
 
-<p class="PaketCenter">Meikit</p>
+<p data-aos="fade-left" class="PaketCenter">Meikit</p>
 
 
-   <div class="alignmiddle">
+   <div class="alignmiddle" data-aos="fade-left">
   <% makes.forEach(function(p){ %>
 <p class="paratest" ><span class="leftpara"><%= p.first %></span> <span class="testleft"><%= p.second %></span></p><br>
   <% }); %>  
