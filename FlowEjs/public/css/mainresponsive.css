@@ -280,10 +280,13 @@
 /* Footer */
 
 @media only screen and (min-width: 1300px) and (max-width: 1600px) {
-    .FooterNavi {
-        margin-left:280px;
+    .allFooter {
+        margin:auto;
+        padding-left:30%;
+        padding-right:30%;
+    
+        
     }
-
 }
 
 
@@ -404,10 +407,16 @@ transform: translate(-55%, 0%);
 /* Footer */
 
 @media only screen and (min-width: 1024px) and (max-width: 1299px) {
-    .FooterNavi {
-        margin-left:80px;
+    .allFooter {
+        margin:auto;
+        padding-left:25%;
+        padding-right:25%;
+    
+      
+        
+        
+        
     }
-
 }
 
 
@@ -566,26 +575,29 @@ transform: translate(-55%, 0%);
 /* Footer */
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    .FooterNavi {
-        margin-left:65px;
+    
+    .allFooter {
+        margin:auto;
+        padding-left:18%;
+        padding-right:18%;
+    
+      
+        
+        
+        
     }
-    .FooterMedia {
-        Float:left;
-        margin-left:50px;
-        margin-top:25px;
-    }
+
+    
     
     .Adress {
         Float:left;
-        margin-left:50px;
-        margin-top:25px;
+        
         text-align: left;
     }
     
     .TaKontakt {
         Float:left;
-        margin-left:50px;
-        margin-top:25px;
+        
         text-align: left;
     }
     
@@ -782,27 +794,24 @@ transform: translate(-55%, 0%);
 
 /* Footer */
 
-@media only screen and (min-width: 425px) and (max-width: 767px) {
-    .FooterNavi {
-        margin-left:20px;
-    }
-    .FooterMedia {
-        Float:left;
-        margin-left:50px;
-        margin-top:25px;
+@media only screen and (min-width: 615px) and (max-width: 767px) {
+    
+    .allFooter {
+        margin:auto;
+        padding-left:10%;
+        padding-right:10%;
+    
     }
     
     .Adress {
         Float:left;
-        margin-left:25px;
-        margin-top:25px;
+       
         text-align: left;
     }
     
     .TaKontakt {
         Float:left;
-        margin-left:25px;
-        margin-top:25px;
+        
         text-align: left;
     }
     
@@ -984,29 +993,33 @@ transform: translate(-55%, 0%);
 
 /* Footer */
 
-@media only screen and (min-width: 360px) and (max-width: 424px) {
-    .FooterNavi {
-        margin-left:0px;
-        font-size:12px;
+@media only screen and (min-width: 510px) and (max-width: 614px) {
+    .allFooter {
+        margin:auto;
+        padding-left:5%;
+        padding-right:5%;
+    
+      
+        
+        
+        
     }
     .FooterMedia {
         Float:left;
-        margin-left:35px;
+        
         
         font-size:12px;
     }
     
     .Adress {
         Float:left;
-        margin-left:25px;
+       
        
         text-align: left;
         font-size:12px;
     }
     
     .TaKontakt {
-        Float:left;
-        margin-left:10px;
         
         text-align: left;
         font-size:12px;
@@ -1189,21 +1202,29 @@ transform: translate(-55%, 0%);
 
 /* Footer */
 
-@media only screen and (min-width: 320px) and (max-width: 359px) {
-    .FooterNavi {
-        margin-left:0px;
-        font-size:12px;
+@media only screen and (min-width: 320px) and (max-width: 509px) {
+    
+    .allFooter {
+        margin:auto;
+        padding-left:0%;
+        padding-right:0%;
+    
+      
+        
+        
+        
     }
+
     .FooterMedia {
         Float:left;
-        margin-left:35px;
+        
         
         font-size:12px;
     }
     
     .Adress {
         Float:left;
-        margin-left:0px;
+        
        
         text-align: left;
         font-size:12px;
@@ -1211,7 +1232,7 @@ transform: translate(-55%, 0%);
     
     .TaKontakt {
         Float:left;
-        margin-left:10px;
+     
         
         text-align: left;
         font-size:12px;
@@ -1363,20 +1384,27 @@ transform: translate(-55%, 0%);
 /* Footer */
 
 @media only screen and (min-width: 1px) and (max-width: 319px) {
-    .FooterNavi {
-        margin-left:0px;
-        font-size:12px;
+    
+    .allFooter {
+        margin:auto;
+        padding-left:0%;
+        padding-right:0%;
+    
+      
+        
+        
+        
     }
     .FooterMedia {
         Float:left;
-        margin-left:35px;
+       
         
         font-size:12px;
     }
     
     .Adress {
         Float:left;
-        margin-left:0px;
+       
        
         text-align: left;
         font-size:12px;
@@ -1384,7 +1412,7 @@ transform: translate(-55%, 0%);
     
     .TaKontakt {
         Float:left;
-        margin-left:10px;
+        
         
         text-align: left;
         font-size:12px;

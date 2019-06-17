@@ -660,30 +660,35 @@ a {
     color:white !important;
 }
 
-.FooterNavi {
-    float:left;
-    margin-left:490px;
-    margin-top:25px;
-    text-align: left;
+
+.allFooter {
+    margin:auto;
+    padding-left:36%;
+    padding-right:33%;
+
+  
+    
+    
+    
 }
 
 .FooterMedia {
-    Float:left;
-    margin-left:125px;
-    margin-top:25px;
+    
+    float: left;
+    padding-top:25px;
 }
 
 .Adress {
     Float:left;
-    margin-left:125px;
-    margin-top:25px;
+    padding-left:10%;
+    padding-top:25px;
     text-align: left;
 }
 
 .TaKontakt {
     Float:left;
-    margin-left:125px;
-    margin-top:25px;
+    padding-left:10%;
+    padding-top:25px;
     text-align: left;
 }
 
@@ -695,11 +700,7 @@ a {
     font-size:16px;
 }
 
-.FooterUl {
-text-align: left;
-margin-top:25px;
-padding-left:0 !important;
-}
+
 .FooterImageDown {
     margin-top:25px;
 }

@@ -2,7 +2,6 @@ var express = require('express');
 var router = express.Router();
 var mkdirp = require('mkdirp');
 var fs = require('fs-extra');
-var resizeImg = require('resize-img');
 var auth = require('../config/auth');
 var isAdmin = auth.isAdmin;
 
@@ -57,7 +56,7 @@ router.post('/add-staff',  function (req, res) {
     
 
     req.checkBody('title', 'There has to be name.').notEmpty();
-    req.checkBody('image', 'You must upload an image').isImage(imageFile);
+    
 
     var title = req.body.title;
     var slug = title.replace(/\s+/g, '-').toLowerCase();
@@ -148,7 +147,7 @@ router.post('/add-staff',  function (req, res) {
  * GET edit staff
  */
 router.get('/edit-staff/:id', isAdmin,  function (req, res) {
-
+    
     var errors;
 
     if (req.session.errors)
@@ -183,14 +182,13 @@ router.get('/edit-staff/:id', isAdmin,  function (req, res) {
  
 /*
  * POST edit staff
- */
+*/
 router.post('/edit-staff/:id', function (req, res) {
 
     var imageFile = typeof req.files.image !== "undefined" ? req.files.image.name : "";
-   
 
     req.checkBody('title', 'Title must have a value.').notEmpty();
-    req.checkBody('image', 'You must upload an image').isImage(imageFile);
+    
 
     var title = req.body.title;
     var slug = title.replace(/\s+/g, '-').toLowerCase();
@@ -211,25 +209,22 @@ router.post('/edit-staff/:id', function (req, res) {
                 console.log(err);
 
             if (p) {
-                req.flash('danger', 'Staff name exists, choose another.');
-                res.redirect('/admin/content/edit-staff/' + id);
+                req.flash('danger', 'Staff title exists, choose another.');
+                res.redirect('/admin/staff/edit-staff/' + id);
             } else {
                 Staff.findById(id, function (err, p) {
                     if (err)
                         console.log(err);
 
-                        p.title = title;
-                        p.slug = slug;
-                        p.worktitle = worktitle;
+                    p.title = title;
+                    p.slug = slug;
+                    p.worktitle = worktitle;
                         p.sweworktitle = sweworktitle;
                         p.engworktitle = engworktitle;
-                      
-                      
-                   
                     if (imageFile != "") {
                         p.image = imageFile;
                     }
-                 
+
                     p.save(function (err) {
                         if (err)
                             console.log(err);
@@ -241,8 +236,6 @@ router.post('/edit-staff/:id', function (req, res) {
                                         console.log(err);
                                 });
                             }
-                           
-    
 
                             var staffImage = req.files.image;
                             var path = 'public/staff_images/' + id + '/' + imageFile;
@@ -252,22 +245,17 @@ router.post('/edit-staff/:id', function (req, res) {
                             });
 
                         }
-                       
+
                         req.flash('success', 'staff edited!');
                         res.redirect('/admin/content/edit-staff/' + id);
-                    
                     });
-                    
 
-
-                })
-                
+                });
             }
         });
     }
 
 });
-
 
 
 
