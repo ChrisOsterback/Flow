@@ -228,19 +228,12 @@ html, body {
 img.wide {
     
     width:100% !important;
-    height:880px;
+    height:880px 
     
    
     
 }
 
-#mainpicture {
-    background-image: url("background.jpg");
-    background-size: cover;
-    height:880px;
-    background-repeat: no-repeat;
-    
-}
 
 
 .flow {
