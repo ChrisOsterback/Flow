@@ -1,4 +1,12 @@
 
+@font-face {
+    font-family:"fontsy";
+    src:url(../fonts/Ngarden.ttf) format("truetype");
+
+
+}
+
+
 
 .staffrow img {
     width:290px !important;
@@ -244,6 +252,7 @@ img.wide {
     color:white;
     padding:0;
     margin:0;
+    
 }
 
 p.megatext {
@@ -252,7 +261,7 @@ p.megatext {
     padding-bottom: 0;
     font-weight:normal;
     font-style:normal;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: fontsy !important;
     height:180px;
     
 }
@@ -335,6 +344,7 @@ p {
     padding-top: 100px;
     font-size:24px;
     font-family: Arial, sans-serif;
+    
 }
 
 .FontB {
@@ -342,6 +352,7 @@ p {
     margin:0;
     padding:0;
     letter-spacing: 20px;
+    font-family: fontsy !important;
 }
 .NoM {
     margin-top:0;
