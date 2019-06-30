@@ -618,6 +618,7 @@ transform: translate(-55%, 0%);
     p.megatext {
       font-size:40px;
       height:50px;
+      font-weight: bold;
     }
     p.minitext {
         font-size:17px;
@@ -832,6 +833,7 @@ transform: translate(-55%, 0%);
     p.megatext {
       font-size:30px;
       height:40px;
+      font-weight: bold;
     }
     p.minitext {
         font-size:15px;
@@ -1046,6 +1048,7 @@ transform: translate(-55%, 0%);
     p.megatext {
       font-size:30px;
       height:40px;
+      font-weight: bold;
     }
     p.minitext {
         font-size:15px;
@@ -1250,6 +1253,7 @@ transform: translate(-55%, 0%);
     p.megatext {
       font-size:30px;
       height:40px;
+      font-weight: bold;
     }
     p.minitext {
         font-size:15px;
