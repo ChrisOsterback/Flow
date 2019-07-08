@@ -493,10 +493,15 @@ p {
 }
 .ProductImgDownTwo {
     margin-top:100px;
+   
 }
-
+.lanzaSize {
+    width:200px;
+    height:108px;
+}
 .ProductImgLeft {
     margin-left:125px;
+    
 }
 
 .ImgGigaLeft {
